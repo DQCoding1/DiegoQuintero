@@ -1,0 +1,144 @@
+.presentationAnimation{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+.presentationAnimation__texts {
+  width: 100%;
+  height: 100%;
+  outline: 3px solid var(--font-color);
+  background-color: var(--bg-colorDarker);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: moveUpTexts 5s forwards cubic-bezier(0.86,0,0.07,1);
+}
+
+.presentationAnimation__topText {
+  position: relative;
+  animation: moveTopText 3.5s 1s both cubic-bezier(0.77, 0, 0.18, 1);
+  font-weight: 400;
+  font-size: 3.5rem;
+  opacity: 0;
+}
+
+.presentationAnimation__topText::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 60%;
+  background-color: var(--bg-colorDarker);
+  animation: moveBeforeTopText 3.5s 1s both cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+.presentationAnimation__bottomText {
+  position: relative;
+  animation: moveBottomText 3.5s 1s both cubic-bezier(0.77, 0, 0.18, 1);
+  font-weight: 400;
+  font-size: 3.5rem;
+  opacity: 0;
+}
+
+.presentationAnimation__bottomText::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  background-color: var(--bg-colorDarker);
+  animation: moveBeforeBottomText 3.5s 1s both cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+@keyframes moveUpTexts {
+  0% {
+    transform: translateY(100%);
+  }
+
+  45% {
+    transform: translateY(0%);
+  }
+
+  70% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes moveTopText {
+  0% {
+    transform: translateX(70%);
+  }
+
+  20%{
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+  
+  90%{
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+}
+
+
+@keyframes moveBeforeTopText {
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(3);
+  }
+}
+
+
+@keyframes moveBottomText {
+  0% {
+    transform: translateX(-70%);
+  }
+  
+  20%{
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+  
+  90%{
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+}
+
+
+@keyframes moveBeforeBottomText {
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
