@@ -1,0 +1,161 @@
+.header {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+.header__nav {
+  width: 100%;
+  padding: .5rem 1.5rem;
+}
+
+.header__ul {
+  display: flex;
+  justify-content: end;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.header__li {
+  cursor: pointer;
+  position: relative;
+  padding: .5rem;
+}
+
+.header__li::before {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: -50%;
+  width: 50%;
+  height: 5%;
+  opacity: 0;
+  background-color: var(--links);
+  transition: 300ms;
+
+}
+
+.header__li:hover::before {
+  opacity: 1;
+  left: -15%;
+}
+
+.header__li::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 100%;
+  width: 50%;
+  height: 5%;
+  opacity: 0;
+  background-color: var(--links);
+  transition: 300ms;
+}
+
+.header__li:hover::after {
+  opacity: 1;
+  left: 65%;
+}
+
+.header__section {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__name {
+  font-size: 3.5rem;
+  position: relative;
+  z-index: 100;
+}
+
+.header__name::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--details);
+  top: 50%;
+  left: 30%;
+  z-index: -100;
+}
+
+.header__name::after {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 2px;
+  background-color: var(--details);
+  bottom: 0;
+  left: -25%;
+  z-index: -200;
+}
+
+.header__profession {
+  font-size: 1.5rem;
+  transform: translateX(125%);
+}
+
+
+
+
+@media (max-width:780px) {
+  .header__ul {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  .header__li {
+    padding: .2rem;
+  }
+
+  .header__name {
+    font-size: 2.5rem;
+  }
+
+  .header__name::after {
+    width: 120%;
+    left: -10%;
+  }
+
+  .header__name::before {
+    left: 0%;
+  }
+
+  .header__profession {
+    transform: translateX(70%);
+  }
+}
+
+@media (max-width:480px) {
+  .header__section {
+    gap: 2.5rem;
+  }
+
+  .header__nav {
+    padding: .5rem .5rem;
+  }
+
+  .header__ul {
+    justify-content: space-evenly;
+  }
+
+  .header__name {
+    font-size: 1.7rem;
+  }
+
+  .header__name::before {
+    width: 80px;
+    height: 80px;
+    top: -50%;
+    left: 30%;
+  }
+  
+  .header__profession {
+    transform: translateX(0%);
+  }
+}
