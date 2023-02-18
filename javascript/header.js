@@ -2,7 +2,16 @@ const profession = document.querySelector(".header__profession");
 
 const moveProfession = () => {
   const currentScrollY = window.scrollY;
-  currentScrollY < 400 &&  (profession.style.marginRight = -currentScrollY + "px");
+  console.log(currentScrollY);
+  if (window.innerWidth > 600) {
+    if (currentScrollY < 350) {
+      profession.style.marginRight = currentScrollY + "px";
+    }
+  } else if (window.innerWidth < 480) {
+    if (currentScrollY < 200){
+      profession.style.transform = "translateY(-" + currentScrollY +  "px";
+    }
+  }
 };
 
 window.addEventListener("scroll", moveProfession);

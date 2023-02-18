@@ -1,5 +1,6 @@
 @import './styles/presentation-animation/presentationAnimation.css';
 @import './styles/header/header.css';
+@import './styles/main/about-me/aboutMe.css';
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root{
@@ -23,8 +24,9 @@ body{
 }
 
 .allContent{
-  display: none;
-  opacity: 0;
+  display: block;
+  /* display: none; */
+  /* opacity: 0; */
   width: 100%;
   transition: 1s;
 }
