@@ -21,9 +21,15 @@
     <header class="header">
       <nav class="header__nav">
         <ul class="header__ul">
-          <li class="header__li">About Me</li>
-          <li class="header__li">Projects</li>
-          <li class="header__li">Contact</li>
+          <li class="header__li">
+            <a href="#aboutMe" class="header__a">About Me</a>
+           </li>
+          <li class="header__li">
+            <a href="#projects" class="header__a">Projects</a>
+          </li>
+          <li class="header__li">
+            <a href="#contact" class="header__a">Contact</a>
+          </li>
         </ul>
       </nav>
       <section class="header__section">
@@ -32,9 +38,9 @@
       </section>
     </header>
     <main class="main">
-      <section class="aboutMe">
-        <div class="aboutMe__wave"></div>
-        <h2 class="aboutMe__h2">About Me</h2>
+      <section class="main__section aboutMe" id="aboutMe">
+        <div class="main__wave aboutMe__wave"></div>
+        <h2 class="aboutMe__title">About Me</h2>
         <div class="aboutMe__skills">
           <ul class="aboutMe__technologies">
             <li class="aboutMe__technology--title">Technologies I use:</li>
@@ -44,6 +50,7 @@
             <li class="aboutMe__technology">Sass</li>
             <li class="aboutMe__technology">Bootstrap</li>
             <li class="aboutMe__technology">Css 3</li>
+            <li class="aboutMe__technology">Git</li>
             <li class="aboutMe__technology">Html 5</li>
           </ul>
           <ul class="aboutMe__languages">
@@ -53,11 +60,118 @@
             <li class="aboutMe__language">Spanish</li>
           </ul>
         </div>
-        <p class="aboutMe__p">Hi there, short time ago I got to finish the program launched by the the
+        <p class="aboutMe__description">
+          Hi there, short time ago I got to finish the program launched by the the
           Colombian Government and the National University of Colombia called "misión TIC 2022", currently I am
           looking to continue developing my skills by
-          collaborating with a tech team and contributing with the knowledge I have.</p>
-        
+          collaborating with a tech team and contributing with the knowledge I have.
+        </p>
+      </section>
+      <section class="main__section projects" id="projects">
+        <div class="main__wave projects__wave"></div>
+        <h2 class="projects__title">Projects</h2>
+        <section class="projects__cards">
+          <article class="projects__card" id="thisProject">
+            <div class="projects__cardInitialView" id="thisProject">
+              <h3 class="projects__projectName">This Project</h3>
+              <img 
+                src="./assets/projectsScreenshots/thisPortfolio.jpg" 
+                alt="this portfolio screenshot"
+                class="projects__screenshot"
+              >
+              <div class="projects__icons">
+                <img 
+                  src="./assets/svg/html-icon.svg" 
+                  alt="html logo" 
+                  class="projects__icon"
+                >
+                <img 
+                  src="./assets/svg/css-icon.svg" 
+                  alt="css logo" 
+                  class="projects__icon"
+                >
+                <img 
+                  src="./assets/svg/javascript-icon.svg"
+                  alt="javascript logo" 
+                  class="projects__icon"
+                >
+              </div>
+              <button class="projects__details" id="thisProject">
+                Details ...
+              </button>
+            </div>
+            <div class="projects__cardInitialView--details" id="thisProject">
+              <a 
+                href="" 
+                class="projects__openProject">
+                Open Project
+              </a>
+              <a 
+                href="" 
+                class="projects__openCode">
+                Open Code
+              </a>
+              <button class="projects__flipCard" id="thisProject">
+                Filp Card
+              </button>
+            </div>
+          </article>
+          <article class="projects__card" id="videoGameExchange">
+            <div class="projects__cardInitialView" id="videoGameExchange">
+              <h3 class="projects__projectName">Video Game Exchange</h3>
+              <img 
+                src="./assets/projectsScreenshots/videoGameExchange.jpg" 
+                alt=""
+                class="projects__screenshot"
+              >
+              <div class="projects__icons">
+                <img 
+                src="./assets/svg/html-icon.svg" 
+                alt="html logo"
+                class="projects__icon"
+                >
+                <img 
+                src="./assets/svg/css-icon.svg" 
+                alt="css logo" 
+                class="projects__icon"
+                >
+                <img
+                src="./assets/svg/sass-icon.svg" 
+                alt="sass logo" 
+                class="projects__icon"
+                >
+                <img 
+                src="./assets/svg/javascript-icon.svg" 
+                alt="javascript logo" 
+                class="projects__icon"
+                >
+                <img 
+                  src="./assets/svg/react-icon.svg" 
+                  alt="react logo" 
+                  class="projects__icon"
+                >
+              </div>
+              <button class="projects__details" id="videoGameExchange">
+                Details ...
+              </button>
+            </div>
+            <div class="projects__cardInitialView--details" id="videoGameExchange">
+              <a 
+                href=""
+                class="projects__openProject">
+                Open Project
+              </a>
+              <a 
+                href=""
+                class="projects__openCode">
+                Open Code
+              </a>
+              <button class="projects__flipCard" id="videoGameExchange">
+                Filp Card
+              </button>
+            </div>
+          </article>
+        </section>
       </section>
     </main>
   </div>

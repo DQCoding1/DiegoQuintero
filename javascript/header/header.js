@@ -2,7 +2,6 @@ const profession = document.querySelector(".header__profession");
 
 const moveProfession = () => {
   const currentScrollY = window.scrollY;
-  console.log(currentScrollY);
   if (window.innerWidth > 600) {
     if (currentScrollY < 350) {
       profession.style.marginRight = currentScrollY + "px";

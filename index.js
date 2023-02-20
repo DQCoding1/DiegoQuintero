@@ -1,5 +1,6 @@
-import "./javascript/presentationAnimation.js";
-import "./javascript/header.js";
+import "./javascript/presentationAnimation/presentationAnimation.js";
+import "./javascript/header/header.js";
+import './javascript/main/projectsSection/projectsSection.js';
 
 const allContent = document.querySelector(".allContent");
 
