@@ -10,7 +10,7 @@
   position: absolute;
   background-color: var(--links);
   width: 100%;
-  height: 20px;
+  height: 10px;
   top: 0;
   clip-path: polygon(25% 0%, 75% 0%, 100% 0, 100% 0, 0 100%, 0 0);  
 }

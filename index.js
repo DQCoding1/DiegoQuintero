@@ -1,6 +1,7 @@
 import "./javascript/presentationAnimation/presentationAnimation.js";
 import "./javascript/header/header.js";
 import './javascript/main/projectsSection/projectsSection.js';
+import './javascript/footer/footer.js';
 
 const allContent = document.querySelector(".allContent");
 
