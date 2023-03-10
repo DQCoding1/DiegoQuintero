@@ -7,10 +7,10 @@ const allContent = document.querySelector(".allContent");
 
 const showAllContent = () => {
   setTimeout(() => {
-    // allContent.style.display = "block";
+    allContent.style.display = "block";
   }, 5000);
   setTimeout(() => {
-    // allContent.style.opacity = "1";
+    allContent.style.opacity = "1";
   }, 5500);
 };
 
