@@ -22,7 +22,7 @@
 
 .projects__cards{
   display: grid;
-  width: 80%;
+  width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 2rem;
   gap: 3rem;
@@ -134,8 +134,8 @@
 
 /* card animation */
 
-.rotateCard30deg{
-  transform: rotateX(30deg) ;
+.rotateCard25deg{
+  transform: rotateX(25deg) ;
 }
 
 .rotateCard360deg{

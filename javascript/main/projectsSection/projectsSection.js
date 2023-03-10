@@ -14,12 +14,12 @@ const findElementThatMatches = (elementsArr, btnId) => {
 const handleClick = (e) => {
   const btnId = e.target.id
   const cardMatches = findElementThatMatches(cards, btnId)
-  const initiaViewMatches = findElementThatMatches(cardsInitialView, btnId)
+  const initialViewMatches = findElementThatMatches(cardsInitialView, btnId)
   const viewDetailsMatches = findElementThatMatches(cardsViewDetails, btnId)
-  initiaViewMatches.classList.toggle("hideInitialView")
+  initialViewMatches.classList.toggle("hideInitialView")
   viewDetailsMatches.classList.toggle("showViewDetail")
   if (window.innerWidth > 600){
-    cardMatches.classList.toggle("rotateCard30deg")
+    cardMatches.classList.toggle("rotateCard25deg")
   } else {
     cardMatches.classList.toggle("rotateCard360deg")
   }
