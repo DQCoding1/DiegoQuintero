@@ -3,7 +3,6 @@
 }
 
 .projects__title{
-  font-size: 2.5rem;
   position: relative;
   text-decoration: underline;
   justify-self: center;
@@ -56,7 +55,6 @@
   text-transform: uppercase;
 }
 
-
 .projects__screenshot{
   width: 100%;
 }
@@ -82,7 +80,7 @@
   padding: .5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
-  background-color: var(--bg-color);
+  color: inherit;
   position: relative;
   overflow: hidden;
   z-index: 100;
@@ -121,9 +119,8 @@
 
 .projects__openProject,
 .projects__openCode{
-  color: var(--font-color);
+  color: inherit;
   text-decoration: none;
-  font-size: 1.3rem;
   transition: 200ms;
 }
 
@@ -178,10 +175,6 @@
 }
 
 @media (max-width:800px){
-  .projects__title{
-    font-size: 2rem;
-  }
-
   .projects__projectName{
     font-size: 1rem;
   }
@@ -189,6 +182,7 @@
   .projects__icons{
     gap: 1rem;
   }
+
   .projects__icon{
     width: 35px;
     height: 35px;
@@ -206,12 +200,3 @@
   }
 }
 
-@media (max-width:480px){
-  .projects__title{
-    font-size: 1.7rem;
-  }
-  .projects__openProject,
-  .projects__openCode{
-    font-size: 1rem;
-  }
-}

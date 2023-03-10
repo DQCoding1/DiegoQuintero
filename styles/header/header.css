@@ -1,7 +1,5 @@
 .header {
   min-height: 100vh;
-  background-color: var(--bg-color);
-  color: var(--font-color);
 }
 
 .header__nav {
@@ -12,25 +10,24 @@
 .header__ul {
   display: flex;
   justify-content: end;
-  gap: 2.5rem;
+  gap: 4rem;
   list-style: none;
 }
 
 .header__li {
   cursor: pointer;
   position: relative;
-  padding: .5rem;
 }
 
 .header__a{
   text-decoration: none;
-  color: var(--font-color);
+  color: inherit;
 }
 
 .header__li::before {
   content: "";
   position: absolute;
-  bottom: 0%;
+  bottom: -20%;
   left: -50%;
   width: 50%;
   height: 5%;
@@ -48,7 +45,7 @@
 .header__li::after {
   content: "";
   position: absolute;
-  bottom: 0%;
+  bottom: -20%;
   left: 100%;
   width: 50%;
   height: 5%;
@@ -72,7 +69,7 @@
 }
 
 .header__name {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   position: relative;
   z-index: 100;
 }
@@ -101,7 +98,7 @@
 }
 
 .header__profession {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   transform: translateX(125%);
 }
 
@@ -119,7 +116,7 @@
   }
 
   .header__name {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .header__name::after {
@@ -150,7 +147,7 @@
   }
 
   .header__name {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .header__name::before {

@@ -1,205 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diego Quintero</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diego Quintero</title>
-  <link rel="stylesheet" href="./index.css" />
-</head>
-
-<body>
-  <!-- <div class="presentationAnimation">
+  <body>
+    <!-- <div class="presentationAnimation">
     <div class="presentationAnimation__texts">
       <div class="presentationAnimation__topText">welcome</div>
       <div class="presentationAnimation__bottomText">welcome</div>
     </div>
   </div> -->
 
-  <div class="allContent">
-    <header class="header">
-      <nav class="header__nav">
-        <ul class="header__ul">
-          <li class="header__li">
-            <a href="#aboutMe" class="header__a">About Me</a>
-           </li>
-          <li class="header__li">
-            <a href="#projects" class="header__a">Projects</a>
-          </li>
-          <li class="header__li">
-            <a href="#contact" class="header__a">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <section class="header__section">
-        <h1 class="header__name">DIEGO QUINTERO</h1>
-        <p class="header__profession">Frontend Developer</p>
-      </section>
-    </header>
-    <main class="main">
-      <section class="main__section aboutMe" id="aboutMe">
-        <div class="main__wave aboutMe__wave"></div>
-        <h2 class="aboutMe__title">About Me</h2>
-        <div class="aboutMe__skills">
-          <ul class="aboutMe__technologies">
-            <li class="aboutMe__technology--title">Technologies I use:</li>
-            <li class="aboutMe__technology">React JS</li>
-            <li class="aboutMe__technology">Typescript</li>
-            <li class="aboutMe__technology">Javascript</li>
-            <li class="aboutMe__technology">Sass</li>
-            <li class="aboutMe__technology">Bootstrap</li>
-            <li class="aboutMe__technology">Css 3</li>
-            <li class="aboutMe__technology">Git</li>
-            <li class="aboutMe__technology">Html 5</li>
+    <div class="allContent">
+      <header class="header">
+        <nav class="header__nav">
+          <ul class="header__ul">
+            <li class="header__li">
+              <a href="#aboutMe" class="header__a">About Me</a>
+            </li>
+            <li class="header__li">
+              <a href="#projects" class="header__a">Projects</a>
+            </li>
+            <li class="header__li">
+              <a href="#contact" class="header__a">Contact</a>
+            </li>
           </ul>
-          <ul class="aboutMe__languages">
-            <li class="aboutMe__language--title">languages:</li>
-            <li class="aboutMe__language">English</li>
-            <li class="aboutMe__language">Portuguese</li>
-            <li class="aboutMe__language">Spanish</li>
-          </ul>
-        </div>
-        <p class="aboutMe__description">
-          Hi there, short time ago I got to finish the program launched by the the
-          Colombian Government and the National University of Colombia called "misión TIC 2022", currently I am
-          looking to continue developing my skills by
-          collaborating with a tech team and contributing with the knowledge I have.
-        </p>
-      </section>
-      <section class="main__section projects" id="projects">
-        <div class="main__wave projects__wave"></div>
-        <h2 class="projects__title">Projects</h2>
-        <section class="projects__cards">
-          <article class="projects__card" id="thisProject">
-            <div class="projects__cardInitialView" id="thisProject">
-              <h3 class="projects__projectName">This Project</h3>
-              <img 
-                src="./assets/projectsScreenshots/thisPortfolio.jpg" 
-                alt="this portfolio screenshot"
-                class="projects__screenshot"
-              >
-              <div class="projects__icons">
-                <img 
-                  src="./assets/svg/html-icon.svg" 
-                  alt="html logo" 
-                  class="projects__icon"
-                >
-                <img 
-                  src="./assets/svg/css-icon.svg" 
-                  alt="css logo" 
-                  class="projects__icon"
-                >
-                <img 
-                  src="./assets/svg/javascript-icon.svg"
-                  alt="javascript logo" 
-                  class="projects__icon"
-                >
-              </div>
-              <button class="projects__details" id="thisProject">
-                Details ...
-              </button>
-            </div>
-            <div class="projects__cardInitialView--details" id="thisProject">
-              <a 
-                href="" 
-                class="projects__openProject">
-                Open Project
-              </a>
-              <a 
-                href="" 
-                class="projects__openCode">
-                Open Code
-              </a>
-              <button class="projects__flipCard" id="thisProject">
-                Filp Card
-              </button>
-            </div>
-          </article>
-          <article class="projects__card" id="videoGameExchange">
-            <div class="projects__cardInitialView" id="videoGameExchange">
-              <h3 class="projects__projectName">Video Game Exchange</h3>
-              <img 
-                src="./assets/projectsScreenshots/videoGameExchange.jpg" 
-                alt=""
-                class="projects__screenshot"
-              >
-              <div class="projects__icons">
-                <img 
-                src="./assets/svg/html-icon.svg" 
-                alt="html logo"
-                class="projects__icon"
-                >
-                <img 
-                src="./assets/svg/css-icon.svg" 
-                alt="css logo" 
-                class="projects__icon"
-                >
-                <img
-                src="./assets/svg/sass-icon.svg" 
-                alt="sass logo" 
-                class="projects__icon"
-                >
-                <img 
-                src="./assets/svg/javascript-icon.svg" 
-                alt="javascript logo" 
-                class="projects__icon"
-                >
-                <img 
-                  src="./assets/svg/react-icon.svg" 
-                  alt="react logo" 
-                  class="projects__icon"
-                >
-              </div>
-              <button class="projects__details" id="videoGameExchange">
-                Details ...
-              </button>
-            </div>
-            <div class="projects__cardInitialView--details" id="videoGameExchange">
-              <a 
-                href=""
-                class="projects__openProject">
-                Open Project
-              </a>
-              <a 
-                href=""
-                class="projects__openCode">
-                Open Code
-              </a>
-              <button class="projects__flipCard" id="videoGameExchange">
-                Filp Card
-              </button>
-            </div>
-          </article>
+        </nav>
+        <section class="header__section">
+          <h1 class="header__name">DIEGO QUINTERO</h1>
+          <p class="header__profession">Frontend Developer</p>
         </section>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__wave"></div>
-      <h2 class="footer__title">Contact</h2>
-      <p class="footer__p">You can find me and send me a message here</p>
-      <div class="footer__socialMediaContainer">
-        <a href="" class="footer__socialMedia">
-          <h3 class="footer__socialMediaTitle">LinkedIn</h3>
-          <img 
-            src="./assets/svg/linkedin-icon.svg" 
-            alt="linkedin icon" 
-            class="footer__socialMediaIcon"
-          >
-        </a>
-        <a href="" class="footer__socialMedia">
-          <h3 class="footer__socialMediaTitle">GitHub</h3>
-          <img 
-            src="./assets/svg/gitHub-icon.svg"
-            alt="github icon" 
-            class="footer__socialMediaIcon"
-          >
-        </a>
-      </div>
-      <div class="footer__circle"></div>
-    </footer>
-  </div>
-  <script src="./index.js" type="module"></script>
-</body>
-
+      </header>
+      <main class="main">
+        <section class="main__section aboutMe" id="aboutMe">
+          <div class="main__wave aboutMe__wave"></div>
+          <h2 class="aboutMe__title">About Me</h2>
+          <div class="aboutMe__skills">
+            <ul class="aboutMe__technologies">
+              <li class="aboutMe__technology--title">Technologies I use:</li>
+              <li class="aboutMe__technology">React JS</li>
+              <li class="aboutMe__technology">Typescript</li>
+              <li class="aboutMe__technology">Javascript</li>
+              <li class="aboutMe__technology">Sass</li>
+              <li class="aboutMe__technology">Bootstrap</li>
+              <li class="aboutMe__technology">Css 3</li>
+              <li class="aboutMe__technology">Git</li>
+              <li class="aboutMe__technology">Html 5</li>
+            </ul>
+            <ul class="aboutMe__languages">
+              <li class="aboutMe__language--title">languages:</li>
+              <li class="aboutMe__language">English</li>
+              <li class="aboutMe__language">Portuguese</li>
+              <li class="aboutMe__language">Spanish</li>
+            </ul>
+          </div>
+          <p class="aboutMe__description">
+            Hi there, short time ago I got to finish the program launched by the
+            the Colombian Government and the National University of Colombia
+            called "misión TIC 2022", currently I am looking to continue
+            developing my skills by collaborating with a tech team and
+            contributing with the knowledge I have.
+          </p>
+        </section>
+        <section class="main__section projects" id="projects">
+          <div class="main__wave projects__wave"></div>
+          <h2 class="projects__title">Projects</h2>
+          <section class="projects__cards">
+            <article class="projects__card" id="thisProject">
+              <div class="projects__cardInitialView" id="thisProject">
+                <h3 class="projects__projectName">This Project</h3>
+                <img
+                  src="./assets/projectsScreenshots/thisPortfolio.jpg"
+                  alt="this portfolio screenshot"
+                  class="projects__screenshot"
+                />
+                <div class="projects__icons">
+                  <img
+                    src="./assets/svg/html-icon.svg"
+                    alt="html logo"
+                    class="projects__icon"
+                  />
+                  <img
+                    src="./assets/svg/css-icon.svg"
+                    alt="css logo"
+                    class="projects__icon"
+                  />
+                  <img
+                    src="./assets/svg/javascript-icon.svg"
+                    alt="javascript logo"
+                    class="projects__icon"
+                  />
+                </div>
+                <button class="projects__details" id="thisProject">
+                  Details ...
+                </button>
+              </div>
+              <div class="projects__cardInitialView--details" id="thisProject">
+                <a href="" class="projects__openProject"> Open Project </a>
+                <a href="" class="projects__openCode"> Open Code </a>
+                <button class="projects__flipCard" id="thisProject">
+                  Filp Card
+                </button>
+              </div>
+            </article>
+            <article class="projects__card" id="videoGameExchange">
+              <div class="projects__cardInitialView" id="videoGameExchange">
+                <h3 class="projects__projectName">Video Game Exchange</h3>
+                <img
+                  src="./assets/projectsScreenshots/videoGameExchange.jpg"
+                  alt=""
+                  class="projects__screenshot"
+                />
+                <div class="projects__icons">
+                  <img
+                    src="./assets/svg/html-icon.svg"
+                    alt="html logo"
+                    class="projects__icon"
+                  />
+                  <img
+                    src="./assets/svg/css-icon.svg"
+                    alt="css logo"
+                    class="projects__icon"
+                  />
+                  <img
+                    src="./assets/svg/sass-icon.svg"
+                    alt="sass logo"
+                    class="projects__icon"
+                  />
+                  <img
+                    src="./assets/svg/javascript-icon.svg"
+                    alt="javascript logo"
+                    class="projects__icon"
+                  />
+                  <img
+                    src="./assets/svg/react-icon.svg"
+                    alt="react logo"
+                    class="projects__icon"
+                  />
+                </div>
+                <button class="projects__details" id="videoGameExchange">
+                  Details ...
+                </button>
+              </div>
+              <div
+                class="projects__cardInitialView--details"
+                id="videoGameExchange"
+              >
+                <a href="" class="projects__openProject"> Open Project </a>
+                <a href="" class="projects__openCode"> Open Code </a>
+                <button class="projects__flipCard" id="videoGameExchange">
+                  Filp Card
+                </button>
+              </div>
+            </article>
+          </section>
+        </section>
+      </main>
+      <footer class="footer" id="contact">
+        <div class="footer__wave"></div>
+        <h2 class="footer__title">Contact</h2>
+        <p class="footer__p">You can find me and send me a message here 👇</p>
+        <div class="footer__socialMediaContainer">
+          <a href="" class="footer__socialMedia">
+            <h3 class="footer__socialMediaTitle">LinkedIn</h3>
+            <img
+              src="./assets/svg/linkedin-icon.svg"
+              alt="linkedin icon"
+              class="footer__socialMediaIcon"
+            />
+          </a>
+          <a href="" class="footer__socialMedia">
+            <h3 class="footer__socialMediaTitle">GitHub</h3>
+            <img
+              src="./assets/svg/gitHub-icon.svg"
+              alt="github icon"
+              class="footer__socialMediaIcon"
+            />
+          </a>
+        </div>
+        <div class="footer__circle"></div>
+      </footer>
+    </div>
+    <script src="./index.js" type="module"></script>
+  </body>
 </html>

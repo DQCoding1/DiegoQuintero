@@ -4,6 +4,7 @@
   display: grid;
   padding: 3rem;
   position: relative;
+  font-size: 1.2rem;
 }
 
 .main__wave{
@@ -16,7 +17,6 @@
 }
 
 .aboutMe__title{
-  font-size: 2.5rem;
   position: relative;
   justify-self: center;
   text-decoration: underline;
@@ -34,11 +34,6 @@
   z-index: -100;
 }
 
-.aboutMe__description{
-  font-size: 1.4rem;
-  align-self: center;
-}
-
 .aboutMe__skills{
   display: grid;
   gap: 2rem;
@@ -48,14 +43,15 @@
 .aboutMe__languages{
   list-style: none;
   display: flex;
-  font-size: 1.2rem;
   gap: 2rem;
 }
+
 
 .aboutMe__technology,
 .aboutMe__language{
   list-style: none;
-  font-weight: 600;
+  font-style: italic;
+  font-weight: 500;
 }
 
 
@@ -66,16 +62,12 @@
 }
 
 @media (max-width:850px){
-  .aboutMe{
-    gap: 5rem;
-  }
-  
-  .aboutMe__title{
-    font-size: 2rem;
+  .main__section{
+    font-size: 1rem;
   }
 
-  .aboutMe__description{
-    font-size: 1.2rem;
+  .aboutMe{
+    gap: 5rem;
   }
 
   .aboutMe__skills{
@@ -93,33 +85,12 @@
     flex-direction: column;
     gap: 1rem;
   }
-  
-  .aboutMe__technology,
-  .aboutMe__language{
-    font-size: 1.1rem;
-  }
+
 }
 
 @media(max-width:480px){
   .aboutMe{
     gap: 2.5rem;
-  }
-
-  .aboutMe__title{
-    font-size: 1.7rem;
-  }
-
-  .aboutMe__description{
-    font-size: 1.1rem;
-  }
-
-  .aboutMe__technology--title,
-  .aboutMe__language--title{
-    font-size: 1.1rem;
-  }
-  .aboutMe__technology,
-  .aboutMe__language{
-    font-size: 1rem;
   }
 }
 
