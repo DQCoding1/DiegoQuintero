@@ -7,6 +7,12 @@
   padding: .5rem 1.5rem;
 }
 
+.header__toggleMode{
+  width: 30px;
+  height: 30px;
+  border: 2px solid red;
+}
+
 .header__ul {
   display: flex;
   justify-content: end;
