@@ -6,12 +6,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root{
-  --bg-color: #FAFFFD;
+  /* --bg-color: #FAFFFD; 
   --bg-colorDarker: #F7E3AF;
-  --details: #FAA300;
   --font-color: #24181a;
+  --details: #FAA300;
   --links: #9E643C;
   --cardsColor: #E3E4DB;
+  --cardsBtn: #fff;
+   --cardsShadow: #72492d; */
+  --bg-color: #1f1f1f; 
+  --bg-colorDarker: #6e6e6e;
+  --font-color: #d3d3d3;
+  --details: #b27401;
+  --links: #403728;
+  --cardsColor: #363636;
+  --cardsBtn: #545454;
+  --cardsShadow: #161212; 
 }
 
 * {
@@ -27,6 +37,7 @@ body{
   font-size: 1rem;
   overflow-x: hidden; 
 }
+
 
 h2{
   font-size: 1.8rem;
