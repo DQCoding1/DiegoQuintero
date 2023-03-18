@@ -9,7 +9,7 @@
 
 .main__wave{
   position: absolute;
-  background-color: var(--links);
+  background-color: var(--sectionDivider);
   width: 100%;
   height: 10px;
   top: 0;
