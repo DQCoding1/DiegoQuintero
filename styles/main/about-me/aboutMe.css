@@ -52,12 +52,18 @@
   list-style: none;
   font-style: italic;
   font-weight: 500;
+
 }
 
 
 @media (max-width:1080px){
   .aboutMe{
     padding: 2rem;
+  }
+
+  .aboutMe__technologies,
+  .aboutMe__languages{
+    gap: 1rem;
   }
 }
 
@@ -83,7 +89,6 @@
   .aboutMe__technologies,
   .aboutMe__languages{
     flex-direction: column;
-    gap: 1rem;
   }
 
 }
