@@ -24,11 +24,13 @@
     gap: 3.2rem;
 }
 
-.header__li {
+.header__a {
     position: relative;
+    cursor: pointer;
 }
 
-.header__a:not(.header__a--active)::before {
+
+.header__a:is(:not(.header__a--active, .header__brand))::before {
     position: absolute;
     content: "";
     width: 150%;
@@ -55,7 +57,7 @@
     position: relative;
 }
 
-.header__a--active::after {
+.header__a--active::before {
     position: absolute;
     content: "";
     width: 150%;
@@ -70,6 +72,7 @@
     );
     transition: 150ms ease-out;
 }
+
 
 .header__switch {
     width: 50px;

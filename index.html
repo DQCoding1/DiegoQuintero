@@ -18,24 +18,29 @@
         <link rel="stylesheet" href="./index.css" />
     </head>
     <body class="dark-mode">
-        
         <header class="header">
             <nav class="header__nav">
-                <a class="header__brand"> Diego Quintero </a>
+                <a class="header__brand header__a" data-go_to="home">
+                    Diego Quintero
+                </a>
                 <ul class="header__ul">
                     <li class="header__li">
-                        <a class="header__a header__a--active" data-home="home">
+                        <a
+                            class="header__a header__a--active"
+                            data-go_to="home"
+                            id="anchorHome"
+                        >
                             Home
                         </a>
                     </li>
                     <li class="header__li">
-                        <a class="header__a">About</a>
+                        <a class="header__a" data-go_to="about">About</a>
                     </li>
                     <li class="header__li">
-                        <a class="header__a">Projects</a>
+                        <a class="header__a" data-go_to="projects">Projects</a>
                     </li>
                     <li class="header__li">
-                        <a class="header__a">Contact</a>
+                        <a class="header__a" data-go_to="contact">Contact</a>
                     </li>
                     <li class="header__li--switch">
                         <div class="header__switch">
@@ -58,8 +63,14 @@
         </header>
 
         <main class="main">
-            <section class="main__section"></section>
-            <section class="main__section"></section>
+            <section class="main__section" data-section="home">home</section>
+            <section class="main__section" data-section="about">about</section>
+            <section class="main__section" data-section="projects">
+                projects
+            </section>
+            <section class="main__section" data-section="contact">
+                contact
+            </section>
         </main>
 
         <script src="./index.js" type="module"></script>

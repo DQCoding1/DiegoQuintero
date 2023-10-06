@@ -1,5 +1,5 @@
 const navAnchors = document.querySelectorAll(".header__a");
-const homeAnchor = document.querySelector("[data-home]");
+const homeAnchor = document.getElementById("anchorHome");
 
 const addActiveAnchor = (e) => {
     if (e.target.classList.contains("header__brand")) {
