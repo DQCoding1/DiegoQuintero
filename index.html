@@ -1,316 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="diego quintero" />
-    <meta 
-      name="keywords" 
-      content="diego quintero, diego quintero portfolio, diego quintero frontend" 
-    />
-    <meta 
-      name="description" 
-      content="diego quintero portfolio, you can see the projects i've done,
-      you can know about me a little bit and contact me throughout my social media" 
-    />
-    <title>Diego Quintero</title>
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="shortcut icon" href="./assets/svg/favicon.svg" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="diego quintero" />
+        <meta
+            name="keywords"
+            content="diego quintero, diego quintero portfolio, diego quintero frontend"
+        />
+        <meta
+            name="description"
+            content="diego quintero portfolio, you can see the projects i've done,
+      you can know about me a little bit and contact me throughout my social media"
+        />
+        <title>Diego Quintero</title>
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+    <body class="dark-mode">
 
-  <body class="darkMode">
-    <div class="presentationAnimation">
-      <div class="presentationAnimation__texts">
-        <div class="presentationAnimation__topText">welcome</div>
-        <div class="presentationAnimation__bottomText">welcome</div>
-      </div>
-    </div> 
+        <header class="header">
+            <div class="header__brand">Diego Quintero</div>
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li class="header__li">
+                        <a href="" class="header__a">Home</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="" class="header__a">About</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="" class="header__a">Projects</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="" class="header__a">Contact</a>
+                    </li>
+                    <li class="header__li--switch">
+                        <div class="header__switch">
+                            <div class="header__btn-switch">
+                                <img src="./assets/moon.png" class="header__img-switch" alt="dark mode">
+                                <!-- <img src="./assets/sun.png" class="header__img-switch" alt="light mode"> -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-    <div class="allContent">
-      <header class="header">
-        <nav class="header__nav">
-          <div class="header__mode">
-            <p class="header__dark">Dark</p>
-            <div class="header__toggleMode">
-              <div class="header__toggleBtn"></div>
-            </div>
-            <p class="header__light">Light</p>
-          </div>
-          <ul class="header__ul">
-            <li class="header__li">
-              <a href="#aboutMe" class="header__a">About Me</a>
-            </li>
-            <li class="header__li">
-              <a href="#projects" class="header__a">Projects</a>
-            </li>
-            <li class="header__li">
-              <a href="#contact" class="header__a">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <section class="header__section">
-          <h1 class="header__name">DIEGO QUINTERO</h1>
-          <p class="header__profession">Frontend Developer</p>
-        </section>
-      </header>
-      <main class="main">
-        <section class="main__section aboutMe" id="aboutMe">
-          <div class="main__wave aboutMe__wave"></div>
-          <h2 class="aboutMe__title">About Me</h2>
-          <div class="aboutMe__skills">
-            <ul class="aboutMe__technologies">
-              <li class="aboutMe__technology--title">Technologies I use:</li>
-              <li class="aboutMe__technology">React JS</li>
-              <li class="aboutMe__technology">Typescript</li>
-              <li class="aboutMe__technology">Javascript</li>
-              <li class="aboutMe__technology">Sass</li>
-              <li class="aboutMe__technology">Bootstrap</li>
-              <li class="aboutMe__technology">Css 3</li>
-              <li class="aboutMe__technology">Git</li>
-              <li class="aboutMe__technology">Html 5</li>
-              <li class="aboutMe__technology">Php</li>
-              <li class="aboutMe__technology">Mysql</li>
-            </ul>
-            <ul class="aboutMe__languages">
-              <li class="aboutMe__language--title">languages:</li>
-              <li class="aboutMe__language">English</li>
-              <li class="aboutMe__language">Portuguese</li>
-              <li class="aboutMe__language">Spanish</li>
-            </ul>
-          </div>
-          <p class="aboutMe__description">
-            I am a Frontend Web Developer focused to work with React Js,
-            looking for always implement good practices in the code I write,
-            I enjoy all the things that involves art like the music and 
-            programming, I'm passionate about that. short time ago I got to finish 
-            the program launched by the the Colombian Government and 
-            the National University of Colombia called "misión TIC 2022".
-            Currently I am looking to continue developing
-            my skills by collaborating with a tech team and contributing
-            with the knowledge I have.
-          </p>
-        </section>
-        <section class="main__section projects" id="projects">
-          <div class="main__wave projects__wave"></div>
-          <h2 class="projects__title">Projects</h2>
-          <section class="projects__cards">
-            <article class="projects__card" id="thisProject">
-              <div class="projects__cardInitialView" id="thisProject">
-                <h3 class="projects__projectName">This Project</h3>
-                <img
-                  src="./assets/projectsScreenshots/thisPortfolio.jpg"
-                  alt="this portfolio screenshot"
-                  class="projects__screenshot"
-                />
-                <div class="projects__icons">
-                  <img
-                    src="./assets/svg/html-icon.svg"
-                    alt="html logo"
-                    class="projects__icon"
-                  />
-                  <img
-                    src="./assets/svg/css-icon.svg"
-                    alt="css logo"
-                    class="projects__icon"
-                  />
-                  <img
-                    src="./assets/svg/javascript-icon.svg"
-                    alt="javascript logo"
-                    class="projects__icon"
-                  />
-                </div>
-                <button class="projects__details" id="thisProject">
-                  Details ...
-                </button>
-              </div>
-              <div class="projects__cardInitialView--details" id="thisProject">
-                <a 
-                  href="https://dqcoding1.github.io/DiegoQuintero/" 
-                  target="_blank"
-                  class="projects__openProject"
-                  > 
-                    Open Project 
-                </a>
-                <a 
-                  href="https://github.com/DQCoding1/DiegoQuintero" 
-                  target="_blank"
-                  class="projects__openCode"
-                  > 
-                    Open Code 
-                </a>
-                <button class="projects__flipCard" id="thisProject">
-                  Filp Card
-                </button>
-              </div>
-            </article>
-            <article class="projects__card" id="guitarChordsTest">
-              <div class="projects__cardInitialView" id="guitarChordsTest">
-                <h3 class="projects__projectName">Guitar Chords Test</h3>
-                <img
-                  src="./assets/projectsScreenshots/guitarChordsTest.jpg"
-                  alt="guitar chords test screenshot"
-                  class="projects__screenshot"
-                />
-                <div class="projects__icons">
-                  <img
-                    src="./assets/svg/html-icon.svg"
-                    alt="html logo"
-                    class="projects__icon"
-                  />
-                  <img
-                    src="./assets/svg/css-icon.svg"
-                    alt="html logo"
-                    class="projects__icon"
-                  />
-                  <img
-                    src="./assets/svg/bootstrap-icon.svg"
-                    alt="css logo"
-                    class="projects__icon"
-                  />
-                  <img
-                    src="./assets/svg/typescript-icon.svg"
-                    alt="Typescript logo"
-                    class="projects__icon"
-                  />
-                  <img
-                    src="./assets/svg/react-icon.svg"
-                    alt="Typescript logo"
-                    class="projects__icon"
-                  />
-                </div>
-                <button class="projects__details" id="guitarChordsTest">
-                  Details ...
-                </button>
-              </div>
-              <div class="projects__cardInitialView--details" id="guitarChordsTest">
-                <a 
-                  href="https://dqcoding1.github.io/guitar-chords-test/" 
-                  class="projects__openProject"
-                  target="_blank"
-                >  
-                  Open Project
-                </a>
-                <a 
-                  href="https://github.com/DQCoding1/guitar-chords-test" 
-                  class="projects__openCode"
-                  target="_blank"
-                >  
-                  Open Code
-                </a>
-                <button class="projects__flipCard" id="guitarChordsTest">
-                  Filp Card
-                </button>
-              </div>
-            </article>
-            <article class="projects__card" id="videoGameExchange">
-              <div class="projects__cardInitialView" id="videoGameExchange">
-                <h3 class="projects__projectName">Video Game Exchange</h3>
-                <img
-                  src="./assets/projectsScreenshots/videoGameExchange.jpg"
-                  alt=""
-                  class="projects__screenshot"
-                />
-                <div class="projects__icons">
-                  <img
-                    src="./assets/svg/php-icon.svg"
-                    alt="php logo"
-                    class="projects__icon"
-                  />
-                  <img
-                    src="./assets/svg/mysql-icon.svg"
-                    alt="mysql logo"
-                    class="projects__icon"
-                  />
-                  <img
-                    src="./assets/svg/html-icon.svg"
-                    alt="html logo"
-                    class="projects__icon"
-                  />
-                  <img
-                    src="./assets/svg/css-icon.svg"
-                    alt="css logo"
-                    class="projects__icon"
-                  />
-                  <img
-                    src="./assets/svg/sass-icon.svg"
-                    alt="sass logo"
-                    class="projects__icon"
-                  />
-                  <img
-                    src="./assets/svg/javascript-icon.svg"
-                    alt="javascript logo"
-                    class="projects__icon"
-                  />
-                  <img
-                    src="./assets/svg/react-icon.svg"
-                    alt="react logo"
-                    class="projects__icon"
-                  />
-                </div>
-                <button class="projects__details" id="videoGameExchange">
-                  Details ...
-                </button>
-              </div>
-              <div
-                class="projects__cardInitialView--details"
-                id="videoGameExchange"
-              >
-                <a 
-                  href="https://dqcoding1.github.io/video-game-exchange/"
-                  target="_blank" 
-                  class="projects__openProject"
-                > 
-                  Open Project 
-                </a>
-                <a 
-                  href="https://github.com/DQCoding1/video-game-exchange"
-                  target="_blank" 
-                  class="projects__openCode"
-                >
-                  Open Code
-                </a>
-                <button class="projects__flipCard" id="videoGameExchange">
-                  Filp Card
-                </button>
-              </div>
-            </article>
-          </section>
-        </section>
-      </main>
-      <footer class="footer" id="contact">
-        <div class="footer__wave"></div>
-        <h2 class="footer__title">Contact</h2>
-        <p class="footer__p">You can find and contact me here 👇</p>
-        <div class="footer__socialMediaContainer">
-          <a 
-            href="https://www.linkedin.com/in/diego--quintero/"
-            target="_blank" 
-            class="footer__socialMedia"
-          >
-            <h3 class="footer__socialMediaTitle">LinkedIn</h3>
-            <img
-              src="./assets/svg/linkedin-icon.svg"
-              alt="linkedin icon"
-              class="footer__socialMediaIcon"
-            />
-          </a>
-          <a 
-            href="https://github.com/DQCoding1"
-            target="_blank" 
-            class="footer__socialMedia"
-          >
-            <h3 class="footer__socialMediaTitle">GitHub</h3>
-            <img
-              src="./assets/svg/gitHub-icon.svg"
-              alt="github icon"
-              class="footer__socialMediaIcon"
-            />
-          </a>
-        </div>
-        <div class="footer__circle"></div>
-      </footer>
-    </div>
-    <script src="./index.js" type="module"></script>
-  </body>
+        <script src="./index.js" type="module"></script>
+    </body>
 </html>
