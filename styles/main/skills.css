@@ -1,0 +1,32 @@
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skills__content {
+    display: flex;
+    gap: 6rem;
+}
+
+.skills__category {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skills__categoryTitle {
+    font-size: var(--fs-subTitle);
+}
+
+.skills__item {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.skills__itemIcon {
+    width: 17px;
+    height: 17px;
+}

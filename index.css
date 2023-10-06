@@ -1,66 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 @import "./styles/header/header.css";
 @import "./styles/main/main.css";
 @import "./styles/main/home.css";
 @import "./styles/main/about.css";
+@import "./styles/main/skills.css";
 
-:root{
-  --gradient-cta-light: #FF6600;
-  --gradient-cta-dark: #6c2400;
-  --fs-title: 1.20rem;
-  --fs-paragraph: .938rem;
+:root {
+    --gradient-cta-light: #ff6600;
+    --gradient-cta-dark: #6c2400;
+    --fs-title: 1.2rem;
+    --fs-subTitle: 1rem;
+    --fs-paragraph: 0.938rem;
 }
 
-.dark-mode{
-  --bg-light: #242424;
-  --bg-dark: #151515;
-  --text-color: #f8f8f8;
-  --gradient-light: #ffffff;
-  --gradient-dark: #b4b4b4;
-  --switch-bg: #caedff;
-  --switch-btn-bg: #55b8e5;
+.dark-mode {
+    --bg-light: #242424;
+    --bg-dark: #151515;
+    --text-color: #f8f8f8;
+    --gradient-light: #ffffff;
+    --gradient-dark: #b4b4b4;
+    --switch-bg: #caedff;
+    --switch-btn-bg: #55b8e5;
 }
 
-.light-mode{
-  --bg-light: #ececec;
-  --switch-bg: #fffbca;
-  --switch-btn-bg: #eaac00;
+.light-mode {
+    --bg-light: #ececec;
+    --switch-bg: #fffbca;
+    --switch-btn-bg: #eaac00;
 }
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-  color: var(--text-color);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
 }
 
-body{
-  background-color: var(--bg-light);
-  transition: 200ms ease-out;
+body {
+    background-color: var(--bg-light);
+    transition: 200ms ease-out;
 }
 
-h1{
-  font-family: 'Cinzel', serif;
-  font-size: var(--fs-title);
+h1 {
+    font-family: "Cinzel", serif;
+    font-size: var(--fs-title);
 }
 
-h2,h3,h4,h5,h6{
-  font-family: 'Comfortaa', cursive;
-  font-size: var(--fs-title);
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Comfortaa", cursive;
+    font-size: var(--fs-title);
 }
 
-p{
-  font-size: var(--fs-paragraph);
+p {
+    font-size: var(--fs-paragraph);
 }
 
-li{
-  list-style: none;
+li {
+    list-style: none;
 }
 
-a{
-  text-decoration: none;
+a {
+    text-decoration: none;
 }
