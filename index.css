@@ -20,7 +20,7 @@
 
 .light-mode{
   --bg-light: #ececec;
-  --switch-bg: #fff6d7;
+  --switch-bg: #fffbca;
   --switch-btn-bg: #eaac00;
 }
 
@@ -33,8 +33,14 @@
   color: var(--text-color);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: var(--bg-light);
+  transition: 200ms ease-out;
+  overflow: hidden;
 }
 
 h1{

@@ -12,34 +12,49 @@
         <meta
             name="description"
             content="diego quintero portfolio, you can see the projects i've done,
-      you can know about me a little bit and contact me throughout my social media"
+                    you can know about me a little bit and contact me throughout my social media"
         />
         <title>Diego Quintero</title>
         <link rel="stylesheet" href="./index.css" />
     </head>
     <body class="dark-mode">
-
         <header class="header">
-            <div class="header__brand">Diego Quintero</div>
             <nav class="header__nav">
+                <a class="header__brand header__a" href="#home">
+                    Diego Quintero
+                </a>
                 <ul class="header__ul">
                     <li class="header__li">
-                        <a href="" class="header__a">Home</a>
+                        <a
+                            href="#home"
+                            class="header__a header__a--active"
+                            data-home="home"
+                        >
+                            Home
+                        </a>
                     </li>
                     <li class="header__li">
-                        <a href="" class="header__a">About</a>
+                        <a href="#about" class="header__a">About</a>
                     </li>
                     <li class="header__li">
-                        <a href="" class="header__a">Projects</a>
+                        <a href="#projects" class="header__a">Projects</a>
                     </li>
                     <li class="header__li">
-                        <a href="" class="header__a">Contact</a>
+                        <a href="#contact" class="header__a">Contact</a>
                     </li>
                     <li class="header__li--switch">
                         <div class="header__switch">
                             <div class="header__btn-switch">
-                                <img src="./assets/moon.png" class="header__img-switch" alt="dark mode">
-                                <!-- <img src="./assets/sun.png" class="header__img-switch" alt="light mode"> -->
+                                <img
+                                    src="./assets/moon.png"
+                                    class="header__img-switch header__img-switch--active"
+                                    alt="dark mode"
+                                />
+                                <img
+                                    src="./assets/sun.png"
+                                    class="header__img-switch"
+                                    alt="light mode"
+                                />
                             </div>
                         </div>
                     </li>
