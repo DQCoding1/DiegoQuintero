@@ -11,7 +11,7 @@
 
 .main__section {
     background-color: var(--bg-dark);
-    min-width: 95%;
+    min-width: 90%;
     height: 90%;
     border-radius: 15px;
 }

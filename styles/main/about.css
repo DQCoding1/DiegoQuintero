@@ -1,0 +1,18 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about__img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+}
+
+
+.about__description{
+    width: 35%;
+}

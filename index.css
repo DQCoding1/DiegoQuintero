@@ -4,10 +4,13 @@
 @import "./styles/header/header.css";
 @import "./styles/main/main.css";
 @import "./styles/main/home.css";
+@import "./styles/main/about.css";
 
 :root{
   --gradient-cta-light: #FF6600;
   --gradient-cta-dark: #6c2400;
+  --fs-title: 1.20rem;
+  --fs-paragraph: .938rem;
 }
 
 .dark-mode{
@@ -42,10 +45,16 @@ body{
 
 h1{
   font-family: 'Cinzel', serif;
+  font-size: var(--fs-title);
 }
 
 h2,h3,h4,h5,h6{
   font-family: 'Comfortaa', cursive;
+  font-size: var(--fs-title);
+}
+
+p{
+  font-size: var(--fs-paragraph);
 }
 
 li{

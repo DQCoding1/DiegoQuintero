@@ -5,10 +5,14 @@
     align-items: center;
 }
 
+.home__brand{
+    width: 35%;
+}
+
 .home__binaryCode{
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 170px;
-    height: 170px;
+    width: 150px;
+    height: 150px;
 }
