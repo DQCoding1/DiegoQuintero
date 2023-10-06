@@ -1,12 +1,11 @@
-.main--section--home{
+.home{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-.main__binaryCode{
+.home__binaryCode{
     position: absolute;
     bottom: 0;
     left: 0;
