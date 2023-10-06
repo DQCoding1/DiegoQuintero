@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-@import "./styles/header.css";
-@import "./styles/main.css";
+@import "./styles/header/header.css";
+@import "./styles/main/main.css";
+@import "./styles/main/home.css";
 
 :root{
   --gradient-cta-light: #FF6600;

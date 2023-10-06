@@ -47,14 +47,14 @@
                             <div class="header__btn-switch">
                                 <img
                                     src="./assets/moon.png"
-                                    class="header__img-switch header__img-switch--active"
                                     alt="dark mode"
+                                    class="header__img-switch header__img-switch--active"
                                 />
                                 <img
                                     src="./assets/sun.png"
-                                    class="header__img-switch"
                                     alt="light mode"
-                                />
+                                    class="header__img-switch"
+                                    />
                             </div>
                         </div>
                     </li>
@@ -63,12 +63,15 @@
         </header>
 
         <main class="main">
-            <section class="main__section" data-section="home">home</section>
-            <section class="main__section" data-section="about">about</section>
-            <section class="main__section" data-section="projects">
+            <section class="main__section main--section--home" data-section="home">
+                <img src="./assets/brand-desktop.svg" alt="diego quintero's brand">
+                <img src="./assets/binary-code.svg" alt="binary code" class="main__binaryCode">
+            </section>
+            <section class="main__section main--section--about" data-section="about">about</section>
+            <section class="main__section main--section--projects" data-section="projects">
                 projects
             </section>
-            <section class="main__section" data-section="contact">
+            <section class="main__section main--section--contact" data-section="contact">
                 contact
             </section>
         </main>

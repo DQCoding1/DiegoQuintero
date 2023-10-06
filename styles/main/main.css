@@ -4,13 +4,12 @@
     overflow: hidden;
     display: flex;
     gap: 1.5rem;
-    background-color: cornflowerblue;
     padding: 0 1.5rem;
 }
 
 .main__section {
+    background-color: var(--bg-dark);
     min-width: 95%;
     height: 95%;
     border-radius: 20px;
-    background-color: aquamarine;
 }
