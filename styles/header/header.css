@@ -42,10 +42,10 @@
     transform: translateX(-30%);
     background: linear-gradient(
         to right,
-        var(--gradient-cta-light),
-        var(--gradient-cta-dark)
+        var(--cta-light),
+        var(--cta-dark)
     );
-    transition: 150ms ease-out;
+    transition: 150ms var(--ease);
 }
 
 .header__a:hover::before {
@@ -67,10 +67,10 @@
     border-radius: 5px;
     background: linear-gradient(
         to right,
-        var(--gradient-cta-light),
-        var(--gradient-cta-dark)
+        var(--cta-light),
+        var(--cta-dark)
     );
-    transition: 150ms ease-out;
+    transition: 150ms var(--ease);
 }
 
 
@@ -97,7 +97,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 200ms ease-out;
+    transition: 200ms var(--ease);
 }
 
 .header__btn-switch--light {
@@ -106,7 +106,7 @@
 
 .header__img-switch {
     display: none;
-    transition: 200ms ease-out;
+    transition: 200ms var(--ease);
 }
 
 .header__img-switch--active {
