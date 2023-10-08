@@ -8,6 +8,7 @@
 @import "./styles/main/skills.css";
 @import "./styles/main/projects.css";
 @import "./styles/main/contact.css";
+@import "./styles/main/projectDetail.css";
 
 :root {
     --cta-light: #ff6600;
@@ -22,8 +23,6 @@
     --bg-light: #242424;
     --bg-dark: #151515;
     --text-color: #f8f8f8;
-    --gradient-light: #ffffff;
-    --gradient-dark: #b4b4b4;
     --switch-bg: #caedff;
     --switch-btn-bg: #55b8e5;
 }
