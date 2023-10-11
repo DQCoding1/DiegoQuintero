@@ -2,7 +2,7 @@
     width: 12px;
 }
 
-.projectDetail::-webkit-scrollbar-track{
+.projectDetail::-webkit-scrollbar-track {
     background-color: var(--bg-light);
 }
 
@@ -24,7 +24,7 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(10%);
-    transition: 500ms var(--ease);
+    transition: 600ms var(--ease);
 }
 
 .projectDetail--active {
@@ -98,7 +98,7 @@
     transform: scale(1);
 }
 
-.projectDetail__title--name{
+.projectDetail__title--name {
     text-transform: uppercase;
 }
 

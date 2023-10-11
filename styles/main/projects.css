@@ -9,19 +9,16 @@
     justify-content: center;
     align-items: center;
     gap: 4rem;
+    transition: 600ms var(--ease);
+}
+
+.projects__content--hidden {
+    transform: translateY(-50%);
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-50%);
-    transition: 500ms var(--ease);
 }
 
-.projects__content--active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.project__item {
+.projects__item {
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -33,7 +30,7 @@
     transition: 200ms var(--ease);
 }
 
-.project__item:hover {
+.projects__item:hover {
     transform: scale(1.05);
 }
 

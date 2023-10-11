@@ -5,11 +5,12 @@
 }
 
 .about__content{
-    max-width: 30%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    transition: 600ms var(--ease);
 }
 
 .about__img{

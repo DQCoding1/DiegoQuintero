@@ -8,21 +8,19 @@ const arielProject = document.querySelector("[data-project='ariel']");
 const projectsContent = document.querySelector(".projects__content");
 
 const openProjectDetail = (e) => {
+    projectsContent.classList.add("projects__content--hidden");
+
     switch (e.target.dataset.go_to) {
         case arielProject.dataset.project:
-            projectsContent.classList.remove("projects__content--active");
             arielProject.classList.add("projectDetail--active");
             break;
         case guitarChordsProject.dataset.project:
-            projectsContent.classList.remove("projects__content--active");
             guitarChordsProject.classList.add("projectDetail--active");
             break;
         case videoGameProject.dataset.project:
-            projectsContent.classList.remove("projects__content--active");
             videoGameProject.classList.add("projectDetail--active");
             break;
         case portfolioProject.dataset.project:
-            projectsContent.classList.remove("projects__content--active");
             portfolioProject.classList.add("projectDetail--active");
             break;
     }

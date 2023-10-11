@@ -2,13 +2,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 2rem;
 }
 
 .skills__content {
+    width: 60%;
     display: flex;
-    gap: 6rem;
+    flex-direction: column;
+    gap: 2rem;
+    transition: 600ms var(--ease);
+}
+
+.skills__title{
+    align-self: center;
+}
+
+.skills__categories {
+    display: flex;
+    justify-content: space-between;
 }
 
 .skills__category {
@@ -16,6 +26,7 @@
     flex-direction: column;
     gap: 1rem;
 }
+
 
 .skills__categoryTitle {
     font-size: var(--fs-subTitle);

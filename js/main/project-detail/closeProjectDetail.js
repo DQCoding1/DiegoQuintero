@@ -3,7 +3,7 @@ const allProjectDetail = document.querySelectorAll(".projectDetail");
 const projectsContent = document.querySelector(".projects__content");
 
 const closeProjectDetail = () => {
-    projectsContent.classList.add("projects__content--active");
+    projectsContent.classList.remove("projects__content--hidden");
     allProjectDetail.forEach((item) => {
         if (item.classList.contains("projectDetail--active")) {
             item.classList.remove("projectDetail--active");
