@@ -28,8 +28,8 @@
 }
 
 .skills__itemIcon {
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
     object-fit: cover;
-    border-radius: 2px;
+    border-radius: 50%;
 }

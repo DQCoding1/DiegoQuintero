@@ -78,3 +78,14 @@ button {
     border: none;
     font-family: inherit;
 }
+
+.elementVisible{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+/* 
+opacity: 0;
+visibility: hidden;
+transform: translateY(30%);
+transition: 500ms var(--ease); */

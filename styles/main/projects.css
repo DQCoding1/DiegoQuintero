@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 .projects__content {
@@ -12,8 +11,8 @@
     gap: 4rem;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-40%);
-    transition: 300ms var(--ease);
+    transform: translateY(-50%);
+    transition: 500ms var(--ease);
 }
 
 .projects__content--active {

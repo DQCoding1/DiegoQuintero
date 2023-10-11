@@ -1,7 +1,10 @@
-const main = document.querySelector(".main")
+const main = document.querySelector(".main");
 
 const moveHorizontalScroll = (e) => {
-    main.scrollLeft += e.deltaY      
-}
+    const projectDetail = document.querySelector(".projectDetail--active");
+    if (!projectDetail) {
+        main.scrollLeft += e.deltaY;
+    }
+};
 
-main.addEventListener("wheel", moveHorizontalScroll)
+main.addEventListener("wheel", moveHorizontalScroll);
