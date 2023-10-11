@@ -7,7 +7,6 @@ const contactContent = document.querySelector(".contact__content");
 const cb = (entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            console.log(entry);
             entry.target.classList.remove("element--hidden");
         }
     });
