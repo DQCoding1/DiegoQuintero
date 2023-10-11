@@ -1,8 +1,15 @@
 const main = document.querySelector(".main");
+const homeScroll = document.querySelector(".home__scroll");
 
 const moveHorizontalScroll = (e) => {
-    const projectDetail = document.querySelector(".projectDetail--active");
-    if (!projectDetail) {
+    if (e.deltaY > 0 && !homeScroll.classList.contains("element--hidden")) {
+        homeScroll.classList.add("element--hidden");
+    }
+
+    const projectDetailActive = document.querySelector(
+        ".projectDetail--active"
+    );
+    if (!projectDetailActive) {
         main.scrollLeft += e.deltaY;
     }
 };

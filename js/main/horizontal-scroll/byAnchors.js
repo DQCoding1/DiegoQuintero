@@ -4,6 +4,7 @@ const aboutSection = document.querySelector("[data-section='about']");
 const projectsSection = document.querySelector("[data-section='projects']");
 const contactSection = document.querySelector("[data-section='contact']");
 const skillsSection = document.querySelector("[data-section='skills']");
+const homeScroll = document.querySelector(".home__scroll");
 
 const goToSection = (e) => {
     switch (e.target.dataset.go_to) {
@@ -42,6 +43,10 @@ const goToSection = (e) => {
             });
             break;
         }
+    }
+
+    if (e.target.dataset.go_to !== "home") {
+        homeScroll.classList.add("element--hidden");
     }
 };
 

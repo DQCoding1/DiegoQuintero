@@ -16,7 +16,10 @@
     --fs-title: 1.2rem;
     --fs-subTitle: 1rem;
     --fs-paragraph: 0.938rem;
-    --ease: ease-out;
+
+    --transition-fast: 200ms;
+    --transition-slow: 700ms;
+    --ease : ease-out;
 }
 
 .dark-mode {
@@ -79,8 +82,8 @@ button {
     font-family: inherit;
 }
 
-.element--hidden{
+.element--hidden {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(20%) ;
+    transform: translateY(20%);
 }
