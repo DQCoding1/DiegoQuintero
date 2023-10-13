@@ -20,9 +20,11 @@
     <body class="dark-mode">
         <header class="header">
             <nav class="header__nav">
-                <a class="header__brand header__a" data-go_to="home">
-                    Diego Quintero
-                </a>
+                <h1 class="header__title">
+                    <a class="header__brand header__a" data-go_to="home">
+                        Diego Quintero
+                    </a>
+                </h1>
                 <ul class="header__ul">
                     <li class="header__li">
                         <a
@@ -67,11 +69,20 @@
 
         <main class="main">
             <section class="main__section home" data-section="home">
-                <img
-                    src="./assets/dashboard/brand-desktop.svg"
-                    alt="diego quintero's brand"
-                    class="home__brand element--hidden"
-                />
+                <div class="home__brand element--hidden">
+                    <img
+                        src="./assets/dashboard/brand-desktop.svg"
+                        alt="diego quintero's brand"
+                        class="home__brandImg home__brandImg--active"
+                        id="brand-darkmode-desktop"
+                        />
+                        <img
+                        src="./assets/dashboard/brand-light-desktop.svg"
+                        alt="diego quintero's brand"
+                        class="home__brandImg"
+                        id="brand-lightmode-desktop"
+                    />
+                </div>
                 <img
                     src="./assets/dashboard/binary-code.svg"
                     alt="binary code"

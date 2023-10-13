@@ -3,7 +3,7 @@
 }
 
 .projectDetail::-webkit-scrollbar-track {
-    background-color: var(--bg-light);
+    background-color: var(--bg-header);
 }
 
 .projectDetail::-webkit-scrollbar-thumb {
@@ -21,7 +21,7 @@
     z-index: 100;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: var(--bg-section);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -157,7 +157,7 @@
     transform: translateX(-30%);
     opacity: 0;
     visibility: hidden;
-    background: linear-gradient(to right, var(--text-color), var(--bg-light));
+    background: linear-gradient(to right, var(--text-color), var(--bg-header));
     transition: var(--transition-fast) var(--ease);
 
     border-radius: 5px;

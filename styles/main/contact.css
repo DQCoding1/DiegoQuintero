@@ -55,7 +55,7 @@
     transform: translateX(-30%);
     opacity: 0;
     visibility: hidden;
-    background: linear-gradient(to right, var(--text-color), var(--bg-light));
+    background: linear-gradient(to right, var(--text-color), var(--bg-header));
     transition: var(--transition-fast) var(--ease);
     border-radius: 5px;
 }
