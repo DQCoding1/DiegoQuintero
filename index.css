@@ -17,7 +17,7 @@
     --fs-subTitle: 1rem;
     --fs-paragraph: 0.938rem;
 
-    --transition-fast: 200ms;
+    --transition-fast: 300ms;
     --transition-slow: 700ms;
     --ease : ease-out;
 }
@@ -33,7 +33,7 @@
 
 .light-mode {
     --bg-header:#dddddd;
-    --bg-main: #d1d1d1; 
+    --bg-main: #cccccc; 
     --text-color: #141414;
     --bg-section: #eaeaea;
     --switch-bg: #f8ffa7;
@@ -47,7 +47,7 @@
 }
 
 body {
-    transition: 200ms var(--ease);
+    transition: var(--transition-fast) var(--ease);
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     color: var(--text-color);
@@ -84,6 +84,7 @@ button {
     outline: none;
     border: none;
     font-family: inherit;
+    color: var(--text-color);
 }
 
 .element--hidden {

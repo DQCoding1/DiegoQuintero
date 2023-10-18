@@ -60,7 +60,6 @@
     background-color: transparent;
     border-radius: 5px;
     z-index: 100;
-    color: var(--text-color);
 }
 
 .projects__button::before {

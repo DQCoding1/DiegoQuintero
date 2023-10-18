@@ -1,3 +1,5 @@
+import { sections } from "../../consts/sections.js";
+const allSections = document.querySelectorAll(".main__section");
 const homeBrand = document.querySelector(".home__brand");
 const homeScroll = document.querySelector(".home__scroll");
 const aboutContent = document.querySelector(".about__content");
@@ -8,23 +10,33 @@ const contactContent = document.querySelector(".contact__content");
 const cb = (entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            if (entry.target.classList.contains("home__scroll")) {
-                entry.target.classList.add("home__scroll--visible");
-            } else {
-                entry.target.classList.remove("element--hidden");
+            switch (entry.target.dataset.section) {
+                case sections.HOME:
+                    homeBrand.classList.remove("element--hidden");
+                    homeScroll.classList.add("home__scroll--visible");
+                    break;
+                case sections.ABOUT:
+                    aboutContent.classList.remove("element--hidden");
+                    break;
+                case sections.SKILLS:
+                    skillsContent.classList.remove("element--hidden");
+                    break;
+                case sections.PROJECTS:
+                    projectsContent.classList.remove("element--hidden");
+                    break;
+                case sections.CONTACT:
+                    contactContent.classList.remove("element--hidden");
+                    break;
             }
         }
     });
 };
 
 const options = {
-    threshold: 0.8,
+    threshold: 0.6,
 };
 
 const observer = new IntersectionObserver(cb, options);
-observer.observe(homeBrand);
-observer.observe(homeScroll);
-observer.observe(aboutContent);
-observer.observe(skillsContent);
-observer.observe(projectsContent);
-observer.observe(contactContent);
+allSections.forEach((item) => {
+    observer.observe(item);
+});

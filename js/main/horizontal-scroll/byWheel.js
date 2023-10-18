@@ -9,6 +9,7 @@ const moveHorizontalScroll = (e) => {
     const projectDetailActive = document.querySelector(
         ".projectDetail--active"
     );
+
     if (!projectDetailActive) {
         main.scrollLeft += e.deltaY;
     }
