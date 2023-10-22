@@ -13,12 +13,12 @@
 :root {
     --cta-light: #ff6600;
     --cta-dark: #923100;
-    --fs-title: 1.2rem;
-    --fs-subTitle: 1rem;
-    --fs-paragraph: 0.938rem;
+    --fs-title: 1.3rem;
+    --fs-subTitle: 1.08rem;
+    --fs-paragraph: 1rem;
     --transition-fast: 300ms;
     --transition-slow: 700ms;
-    --ease: ease-in-out;
+    --ease: ease-out;
 }
 
 .dark-mode {
@@ -68,6 +68,7 @@ h6 {
 
 p {
     font-size: var(--fs-paragraph);
+    line-height: 1.5rem;
 }
 
 li {

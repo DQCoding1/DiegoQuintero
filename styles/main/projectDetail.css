@@ -37,11 +37,11 @@
 }
 
 .projectDetail__content {
-    max-width: 40%;
+    max-width: 50%;
     height: max-content;
     display: flex;
     flex-direction: column;
-    gap: 1.8rem;
+    gap: 3rem;
     padding: 3rem 2rem;
 }
 
@@ -102,13 +102,8 @@
 }
 
 .projectDetail__title--name {
+    font-size: 1.8rem;
     text-transform: uppercase;
-}
-
-.projectDetail__gif {
-    width: 320px;
-    height: 320px;
-    border-radius: 3px;
 }
 
 .projectDetail__items {

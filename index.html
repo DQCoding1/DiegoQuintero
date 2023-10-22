@@ -99,22 +99,22 @@
             <section class="main__section about" data-section="about">
                 <div class="about__content element--hidden">
                     <img
-                        src="./assets/dashboard/brand-desktop.svg"
+                        src="./assets/dashboard/photo.jpg"
                         alt="diego photo"
                         class="about__img"
                     />
                     <h2 class="about__title">WELCOME</h2>
                     <p class="about__description">
-                        I am a Frontend Web Developer focused to work with React
-                        Js, looking for always implement good practices in the
-                        code I write, I enjoy all the things that involves art
-                        like the music and programming, I'm passionate about
-                        that. short time ago I got to finish the program
-                        launched by the the Colombian Government and the
-                        National University of Colombia called "misión TIC
-                        2022". Currently I am looking to continue developing my
-                        skills by collaborating with a tech team and
-                        contributing with the knowledge I have.
+                        My focus is on designing visually appealing and
+                        functional web interfaces, with a keen emphasis on
+                        optimizing performance and enhancing the user
+                        experience. I have gained four months of valuable
+                        freelance experience while working on the Ariel project,
+                        during which I honed my technical and collaboration
+                        skills. Additionally, I successfully completed a program
+                        offered by the National University of Colombia and the
+                        Colombian government called 'Mision Tic 2022,' which
+                        awarded me various diplomas related to web development.
                     </p>
                 </div>
             </section>
@@ -193,24 +193,6 @@
                             </div>
                             <div class="skills__item">
                                 <img
-                                    src="./assets/technologies/jest.svg"
-                                    alt="jest"
-                                    class="skills__itemIcon"
-                                />
-                                <div class="skills__itemName">Jest</div>
-                            </div>
-                            <div class="skills__item">
-                                <img
-                                    src="./assets/technologies/react-testing-library.svg"
-                                    alt="react testing library"
-                                    class="skills__itemIcon"
-                                />
-                                <div class="skills__itemName">
-                                    React Testing Library
-                                </div>
-                            </div>
-                            <div class="skills__item">
-                                <img
                                     src="./assets/technologies/primereact.svg"
                                     alt="primereact"
                                     class="skills__itemIcon"
@@ -247,6 +229,24 @@
                                 />
                                 <div class="skills__itemName">
                                     Framer Motion
+                                </div>
+                            </div>
+                            <div class="skills__item">
+                                <img
+                                    src="./assets/technologies/jest.svg"
+                                    alt="jest"
+                                    class="skills__itemIcon"
+                                />
+                                <div class="skills__itemName">Jest</div>
+                            </div>
+                            <div class="skills__item">
+                                <img
+                                    src="./assets/technologies/react-testing-library.svg"
+                                    alt="react testing library"
+                                    class="skills__itemIcon"
+                                />
+                                <div class="skills__itemName">
+                                    React Testing Library
                                 </div>
                             </div>
                             <div class="skills__item">
@@ -308,183 +308,80 @@
             <section class="main__section projects" data-section="projects">
                 <div class="projects__content element--hidden">
                     <div class="projects__item">
-                        <img
-                            src="./assets/projects/project.gif"
-                            alt=""
-                            class="projects__gif"
-                        />
+                        <video
+                            src="./assets/projects/ariel.mp4"
+                            alt="ariel"
+                            controls
+                            loop
+                            muted
+                            autoplay
+                            class="projects__video"
+                        ></video>
+                        <div class="projects__texts">
+                            <h2 class="projects__title">Ariel</h2>
+                            <button class="projects__button" data-go_to="ariel">
+                                More ...
+                            </button>
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <video
+                            src="./assets/projects/video-games.mp4"
+                            alt="video game"
+                            controls
+                            loop
+                            muted
+                            autoplay
+                            class="projects__video"
+                        ></video>
                         <div class="projects__texts">
                             <h2 class="projects__title">Video game exchange</h2>
                             <button
                                 class="projects__button"
                                 data-go_to="video-game"
                             >
-                                See more
+                                More ...
                             </button>
                         </div>
                     </div>
                     <div class="projects__item">
-                        <img
-                            src="./assets/projects/project.gif"
-                            alt=""
-                            class="projects__gif"
-                        />
-                        <div class="projects__texts">
-                            <h2 class="projects__title">Ariel</h2>
-                            <button class="projects__button" data-go_to="ariel">
-                                See more
-                            </button>
-                        </div>
-                    </div>
-                    <div class="projects__item">
-                        <img
-                            src="./assets/projects/project.gif"
-                            alt=""
-                            class="projects__gif"
-                        />
+                        <video
+                            src="./assets/projects/guitar-chords.mp4"
+                            alt="guitar chords"
+                            controls
+                            loop
+                            muted
+                            autoplay
+                            class="projects__video"
+                        ></video>
                         <div class="projects__texts">
                             <h2 class="projects__title">Guitar Chords Test</h2>
                             <button
                                 class="projects__button"
                                 data-go_to="guitar-chords"
                             >
-                                See more
+                                More ...
                             </button>
                         </div>
                     </div>
                     <div class="projects__item">
-                        <img
-                            src="./assets/projects/project.gif"
-                            alt=""
-                            class="projects__gif"
-                        />
+                        <video
+                            src="./assets/projects/portfolio.mp4"
+                            alt="portfolio"
+                            loop
+                            controls
+                            muted
+                            autoplay
+                            class="projects__video"
+                        ></video>
                         <div class="projects__texts">
                             <h2 class="projects__title">Personal Portfolio</h2>
                             <button
                                 class="projects__button"
                                 data-go_to="portfolio"
                             >
-                                See more
+                                More ...
                             </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projectDetail" data-project="video-game">
-                    <div class="projectDetail__content">
-                        <button class="projectDetail__back">Back</button>
-                        <h2
-                            class="projectDetail__title projectDetail__title--name"
-                        >
-                            Video Game Exchange
-                        </h2>
-                        <img
-                            src="./assets/projects/project.gif"
-                            alt=""
-                            class="projectDetail__gif"
-                        />
-                        <h2 class="projectDetail__title">Description</h2>
-                        <div class="projectDetail__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quo reprehenderit voluptas commodi temporibus
-                            modi atque provident enim, ratione necessitatibus
-                            aperiam tempore molestias voluptatum cupiditate
-                            labore corporis corrupti esse impedit inventore?
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Eum voluptatum delectus quod eligendi totam,
-                            quasi alias saepe qui architecto explicabo fugit,
-                            quaerat deserunt sint, impedit officiis illum. Sunt,
-                            debitis rerum? Quo maxime nisi, vel magnam commodi
-                            sapiente dignissimos quis placeat sequi cumque.
-                            Animi nobis error aperiam maxime, similique
-                            doloribus reiciendis suscipit repudiandae, in odio
-                            ipsam officia officiis recusandae consectetur sed.
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Blanditiis assumenda explicabo sunt! Eaque
-                            eius perspiciatis animi qui cumque est sunt quas
-                            iusto soluta, provident labore ducimus obcaecati
-                            ullam odio rerum. Itaque officiis quaerat possimus,
-                            quibusdam dignissimos culpa neque labore enim cum
-                            tempore nihil minus, non doloribus ipsam deserunt
-                            dolorem beatae! Cumque nostrum excepturi tempore
-                            consectetur ex vero rerum itaque non. Lorem ipsum
-                            dolor sit amet consectetur adipisicing elit. Fuga,
-                            maiores. Eligendi neque molestiae nihil ratione
-                            culpa voluptates accusantium blanditiis dolorum
-                            consectetur enim sint accusamus, fugiat explicabo
-                            repellendus aut, sit laudantium. Rem deleniti nemo
-                            dolorum cum excepturi labore harum quis dicta
-                            distinctio dolore animi, impedit, ut nihil totam
-                            eum! Quos pariatur perspiciatis, eum molestias
-                            perferendis rem provident animi soluta expedita
-                            porro. Dicta repellat quaerat esse? Minus illo
-                            laboriosam velit accusamus iure voluptatum dicta
-                            maiores, numquam doloribus perferendis minima nobis
-                            ea quis vero consequuntur accusantium possimus optio
-                            nesciunt quasi ullam dolorem expedita.
-                        </div>
-                        <h2 class="projectDetail__title">What I used</h2>
-                        <div class="projectDetail__items">
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/react-testing-library.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <div class="projectDetail__technology">
-                                    React Testing Library
-                                </div>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/typescript.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <div class="projectDetail__technology">
-                                    Typescript
-                                </div>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/react.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <div class="projectDetail__technology">
-                                    React js
-                                </div>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/sass.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <div class="projectDetail__technology">
-                                    Sass
-                                </div>
-                            </div>
-                        </div>
-                        <h2>Know More</h2>
-                        <div class="projectDetail__links">
-                            <a class="projectDetail__link">
-                                <img
-                                    src="./assets/dashboard/arrow-right.png"
-                                    alt=""
-                                    class="projectDetail__linkIcon"
-                                />
-                                Go to project
-                            </a>
-                            <a class="projectDetail__link">
-                                <img
-                                    src="./assets/dashboard/arrow-right.png"
-                                    alt=""
-                                    class="projectDetail__linkIcon"
-                                />
-                                Go to code
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -497,62 +394,66 @@
                         >
                             Ariel
                         </h2>
-                        <img
-                            src="./assets/projects/project.gif"
-                            alt=""
-                            class="projectDetail__gif"
-                        />
+                        <p>
+                            Due to confidentiality and security reasons, I
+                            cannot provide access to the project's code or
+                            disclose details. If you want to know more please
+                            contact me.
+                        </p>
                         <h2 class="projectDetail__title">Description</h2>
-                        <div class="projectDetail__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quo reprehenderit voluptas commodi temporibus
-                            modi atque provident enim, ratione necessitatibus
-                            aperiam tempore molestias voluptatum cupiditate
-                            labore corporis corrupti esse impedit inventore?
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Eum voluptatum delectus quod eligendi totam,
-                            quasi alias saepe qui architecto explicabo fugit,
-                            quaerat deserunt sint, impedit officiis illum. Sunt,
-                            debitis rerum? Quo maxime nisi, vel magnam commodi
-                            sapiente dignissimos quis placeat sequi cumque.
-                            Animi nobis error aperiam maxime, similique
-                            doloribus reiciendis suscipit repudiandae, in odio
-                            ipsam officia officiis recusandae consectetur sed.
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Blanditiis assumenda explicabo sunt! Eaque
-                            eius perspiciatis animi qui cumque est sunt quas
-                            iusto soluta, provident labore ducimus obcaecati
-                            ullam odio rerum. Itaque officiis quaerat possimus,
-                            quibusdam dignissimos culpa neque labore enim cum
-                            tempore nihil minus, non doloribus ipsam deserunt
-                            dolorem beatae! Cumque nostrum excepturi tempore
-                            consectetur ex vero rerum itaque non. Lorem ipsum
-                            dolor sit amet consectetur adipisicing elit. Fuga,
-                            maiores. Eligendi neque molestiae nihil ratione
-                            culpa voluptates accusantium blanditiis dolorum
-                            consectetur enim sint accusamus, fugiat explicabo
-                            repellendus aut, sit laudantium. Rem deleniti nemo
-                            dolorum cum excepturi labore harum quis dicta
-                            distinctio dolore animi, impedit, ut nihil totam
-                            eum! Quos pariatur perspiciatis, eum molestias
-                            perferendis rem provident animi soluta expedita
-                            porro. Dicta repellat quaerat esse? Minus illo
-                            laboriosam velit accusamus iure voluptatum dicta
-                            maiores, numquam doloribus perferendis minima nobis
-                            ea quis vero consequuntur accusantium possimus optio
-                            nesciunt quasi ullam dolorem expedita.
-                        </div>
+                        <p class="projectDetail__description">
+                            Legal professionals often face lengthy hearings that
+                            can extend for hours or even days. In addition, they
+                            must tackle the reading and analysis of legal
+                            documents of considerable length and complexity. In
+                            this context, this application presents itself as a
+                            highly capable tool to assist in various legal
+                            tasks. Among its notable features are the ability to
+                            research laws and regulations, prepare and review
+                            legal documents, as well as efficiently organize and
+                            maintain legal files.
+                            <br />
+                            <br />
+                            The platform offers users the opportunity to upload
+                            both audio files and text documents. Through a
+                            built-in chat within the ChatGPT API, interaction is
+                            enabled, allowing users to pose general questions
+                            related to laws and regulations. Furthermore, the
+                            option to make specific inquiries about documents
+                            previously uploaded to the platform is provided.
+                            <br />
+                            <br />
+                            The system is divided into two key roles: that of
+                            the user and the administrator. Users have access to
+                            the functionality of engaging with the chat to ask
+                            general questions about legal matters and to make
+                            specific inquiries regarding audio files uploaded
+                            beforehand. On the other hand, administrators have
+                            the capability to manage user creation and deletion,
+                            as well as interact with the chat to pose detailed
+                            questions about text files previously uploaded to
+                            the platform.
+                            <br />
+                            <br />
+                            In summary, this application provides a
+                            comprehensive solution for legal needs, enabling
+                            legal professionals and users, in general, to
+                            effectively and efficiently address a wide range of
+                            legal issues, from law research to interaction with
+                            specific documents, all backed by the power of
+                            artificial intelligence and ChatGPT's natural
+                            language processing capabilities.
+                        </p>
                         <h2 class="projectDetail__title">What I used</h2>
                         <div class="projectDetail__items">
                             <div class="projectDetail__item">
                                 <img
-                                    src="./assets/technologies/react-testing-library.svg"
+                                    src="./assets/technologies/react.svg"
                                     alt=""
                                     class="projectDetail__icon"
                                 />
                                 <div class="projectDetail__technology">
-                                    React Testing Library
+                                    React
                                 </div>
                             </div>
                             <div class="projectDetail__item">
@@ -567,12 +468,12 @@
                             </div>
                             <div class="projectDetail__item">
                                 <img
-                                    src="./assets/technologies/react.svg"
+                                    src="./assets/technologies/redux.svg"
                                     alt=""
                                     class="projectDetail__icon"
                                 />
                                 <div class="projectDetail__technology">
-                                    React js
+                                    Redux
                                 </div>
                             </div>
                             <div class="projectDetail__item">
@@ -585,10 +486,94 @@
                                     Sass
                                 </div>
                             </div>
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/primereact.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">
+                                    Primereact
+                                </div>
+                            </div>
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/framer-motion.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">
+                                    Framer Motion
+                                </div>
+                            </div>
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/rxjs.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">
+                                    Rxjs
+                                </div>
+                            </div>
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/react-testing-library.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">
+                                    React Testing Library
+                                </div>
+                            </div>
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/jest.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">
+                                    Jest
+                                </div>
+                            </div>
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/html.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">
+                                    Html 5
+                                </div>
+                            </div>
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/css.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">
+                                    Css 3
+                                </div>
+                            </div>
                         </div>
-                        <h2>Know More</h2>
+                    </div>
+                </div>
+
+                <div class="projectDetail" data-project="video-game">
+                    <div class="projectDetail__content">
+                        <button class="projectDetail__back">Back</button>
+                        <h2
+                            class="projectDetail__title projectDetail__title--name"
+                        >
+                            Video Game Exchange
+                        </h2>
                         <div class="projectDetail__links">
-                            <a class="projectDetail__link">
+                            <a
+                                class="projectDetail__link"
+                                href="https://dqcoding1.github.io/video-game-exchange/"
+                                target="_blank"
+                            >
                                 <img
                                     src="./assets/dashboard/arrow-right.png"
                                     alt=""
@@ -596,7 +581,11 @@
                                 />
                                 Go to project
                             </a>
-                            <a class="projectDetail__link">
+                            <a
+                                class="projectDetail__link"
+                                href="https://github.com/DQCoding1/video-game-exchange"
+                                target="_blank"
+                            >
                                 <img
                                     src="./assets/dashboard/arrow-right.png"
                                     alt=""
@@ -604,6 +593,102 @@
                                 />
                                 Go to code
                             </a>
+                        </div>
+                        <h2 class="projectDetail__title">Description</h2>
+                        <p class="projectDetail__description">
+                            This platform has been developed to function as a
+                            video game exchange marketplace. Within this
+                            platform, different users have the opportunity to
+                            trade video games with one another. In the
+                            application, users can filter their search based on
+                            various criteria, such as their console preferences
+                            (be it Xbox, PlayStation, or both), as well as the
+                            game's condition, i.e., whether they wish to acquire
+                            new or used games. Furthermore, there is an option
+                            to specify the generation of the console to which
+                            the game belongs, allowing users to search for
+                            titles from either older or modern consoles.
+                            <br />
+                            <br />
+                            Among the key functionalities of the application are
+                            the ability to register for those who do not have a
+                            user account and to log in if an account has already
+                            been created. Users can upload their video games
+                            onto the platform, along with relevant information
+                            about them. Additionally, a messaging feature is
+                            available, enabling users to communicate with others
+                            interested in exchanging video games.
+                        </p>
+                        <h2 class="projectDetail__title">What I used</h2>
+                        <div class="projectDetail__items">
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/html.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">
+                                    Html 5
+                                </div>
+                            </div>
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/css.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">
+                                    Css 3
+                                </div>
+                            </div>
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/sass.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">
+                                    Sass
+                                </div>
+                            </div>
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/javascript.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">
+                                    Javascript
+                                </div>
+                            </div>
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/react.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">
+                                    React
+                                </div>
+                            </div>
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/php.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">Php</div>
+                            </div>
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/mysql.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">
+                                    Mysql
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -616,62 +701,67 @@
                         >
                             Guitar Chords Test
                         </h2>
-                        <img
-                            src="./assets/projects/project.gif"
-                            alt=""
-                            class="projectDetail__gif"
-                        />
-                        <h2 class="projectDetail__title">Description</h2>
-                        <div class="projectDetail__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quo reprehenderit voluptas commodi temporibus
-                            modi atque provident enim, ratione necessitatibus
-                            aperiam tempore molestias voluptatum cupiditate
-                            labore corporis corrupti esse impedit inventore?
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Eum voluptatum delectus quod eligendi totam,
-                            quasi alias saepe qui architecto explicabo fugit,
-                            quaerat deserunt sint, impedit officiis illum. Sunt,
-                            debitis rerum? Quo maxime nisi, vel magnam commodi
-                            sapiente dignissimos quis placeat sequi cumque.
-                            Animi nobis error aperiam maxime, similique
-                            doloribus reiciendis suscipit repudiandae, in odio
-                            ipsam officia officiis recusandae consectetur sed.
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Blanditiis assumenda explicabo sunt! Eaque
-                            eius perspiciatis animi qui cumque est sunt quas
-                            iusto soluta, provident labore ducimus obcaecati
-                            ullam odio rerum. Itaque officiis quaerat possimus,
-                            quibusdam dignissimos culpa neque labore enim cum
-                            tempore nihil minus, non doloribus ipsam deserunt
-                            dolorem beatae! Cumque nostrum excepturi tempore
-                            consectetur ex vero rerum itaque non. Lorem ipsum
-                            dolor sit amet consectetur adipisicing elit. Fuga,
-                            maiores. Eligendi neque molestiae nihil ratione
-                            culpa voluptates accusantium blanditiis dolorum
-                            consectetur enim sint accusamus, fugiat explicabo
-                            repellendus aut, sit laudantium. Rem deleniti nemo
-                            dolorum cum excepturi labore harum quis dicta
-                            distinctio dolore animi, impedit, ut nihil totam
-                            eum! Quos pariatur perspiciatis, eum molestias
-                            perferendis rem provident animi soluta expedita
-                            porro. Dicta repellat quaerat esse? Minus illo
-                            laboriosam velit accusamus iure voluptatum dicta
-                            maiores, numquam doloribus perferendis minima nobis
-                            ea quis vero consequuntur accusantium possimus optio
-                            nesciunt quasi ullam dolorem expedita.
+                        <div class="projectDetail__links">
+                            <a
+                                class="projectDetail__link"
+                                href="https://dqcoding1.github.io/guitar-chords-test/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./assets/dashboard/arrow-right.png"
+                                    alt=""
+                                    class="projectDetail__linkIcon"
+                                />
+                                Go to project
+                            </a>
+                            <a
+                                class="projectDetail__link"
+                                href="https://github.com/DQCoding1/guitar-chords-test"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./assets/dashboard/arrow-right.png"
+                                    alt=""
+                                    class="projectDetail__linkIcon"
+                                />
+                                Go to code
+                            </a>
                         </div>
+
+                        <h2 class="projectDetail__title">Description</h2>
+                        <p class="projectDetail__description">
+                            The purpose of this application is to assist
+                            guitarists in enhancing their musical ear through an
+                            evaluation of guitar chord identification. Within
+                            the platform, users can engage in training sessions
+                            designed to strengthen their ability to recognize
+                            guitar chords. Furthermore, they have the option to
+                            take a test in which they can customize the number
+                            of desired questions, as well as the variety and
+                            quantity of chord types they wish to identify.
+                            <br />
+                            <br />
+                            During the test, a guitar chord will be randomly
+                            generated, and the goal is for the user to select
+                            the correct option corresponding to that chord. If
+                            the response is accurate, an animation will be
+                            displayed to confirm that the user chose the correct
+                            answer. In the event that the user chooses an
+                            incorrect answer, an animation will be provided to
+                            indicate the correct chord. Upon completion of the
+                            test, the user will be awarded a final score,
+                            assessing their performance in chord identification.
+                        </p>
                         <h2 class="projectDetail__title">What I used</h2>
                         <div class="projectDetail__items">
                             <div class="projectDetail__item">
                                 <img
-                                    src="./assets/technologies/react-testing-library.svg"
+                                    src="./assets/technologies/react.svg"
                                     alt=""
                                     class="projectDetail__icon"
                                 />
                                 <div class="projectDetail__technology">
-                                    React Testing Library
+                                    React
                                 </div>
                             </div>
                             <div class="projectDetail__item">
@@ -686,43 +776,34 @@
                             </div>
                             <div class="projectDetail__item">
                                 <img
-                                    src="./assets/technologies/react.svg"
+                                    src="./assets/technologies/bootstrap.svg"
                                     alt=""
                                     class="projectDetail__icon"
                                 />
                                 <div class="projectDetail__technology">
-                                    React js
+                                    Bootstrap
                                 </div>
                             </div>
                             <div class="projectDetail__item">
                                 <img
-                                    src="./assets/technologies/sass.svg"
+                                    src="./assets/technologies/css.svg"
                                     alt=""
                                     class="projectDetail__icon"
                                 />
                                 <div class="projectDetail__technology">
-                                    Sass
+                                    Css 3
                                 </div>
                             </div>
-                        </div>
-                        <h2>Know More</h2>
-                        <div class="projectDetail__links">
-                            <a class="projectDetail__link">
+                            <div class="projectDetail__item">
                                 <img
-                                    src="./assets/dashboard/arrow-right.png"
+                                    src="./assets/technologies/html.svg"
                                     alt=""
-                                    class="projectDetail__linkIcon"
+                                    class="projectDetail__icon"
                                 />
-                                Go to project
-                            </a>
-                            <a class="projectDetail__link">
-                                <img
-                                    src="./assets/dashboard/arrow-right.png"
-                                    alt=""
-                                    class="projectDetail__linkIcon"
-                                />
-                                Go to code
-                            </a>
+                                <div class="projectDetail__technology">
+                                    Html 5
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -733,108 +814,14 @@
                         <h2
                             class="projectDetail__title projectDetail__title--name"
                         >
-                            Portfolio
+                            Personal Portfolio
                         </h2>
-                        <img
-                            src="./assets/projects/project.gif"
-                            alt=""
-                            class="projectDetail__gif"
-                        />
-                        <h2 class="projectDetail__title">Description</h2>
-                        <div class="projectDetail__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quo reprehenderit voluptas commodi temporibus
-                            modi atque provident enim, ratione necessitatibus
-                            aperiam tempore molestias voluptatum cupiditate
-                            labore corporis corrupti esse impedit inventore?
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Eum voluptatum delectus quod eligendi totam,
-                            quasi alias saepe qui architecto explicabo fugit,
-                            quaerat deserunt sint, impedit officiis illum. Sunt,
-                            debitis rerum? Quo maxime nisi, vel magnam commodi
-                            sapiente dignissimos quis placeat sequi cumque.
-                            Animi nobis error aperiam maxime, similique
-                            doloribus reiciendis suscipit repudiandae, in odio
-                            ipsam officia officiis recusandae consectetur sed.
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Blanditiis assumenda explicabo sunt! Eaque
-                            eius perspiciatis animi qui cumque est sunt quas
-                            iusto soluta, provident labore ducimus obcaecati
-                            ullam odio rerum. Itaque officiis quaerat possimus,
-                            quibusdam dignissimos culpa neque labore enim cum
-                            tempore nihil minus, non doloribus ipsam deserunt
-                            dolorem beatae! Cumque nostrum excepturi tempore
-                            consectetur ex vero rerum itaque non. Lorem ipsum
-                            dolor sit amet consectetur adipisicing elit. Fuga,
-                            maiores. Eligendi neque molestiae nihil ratione
-                            culpa voluptates accusantium blanditiis dolorum
-                            consectetur enim sint accusamus, fugiat explicabo
-                            repellendus aut, sit laudantium. Rem deleniti nemo
-                            dolorum cum excepturi labore harum quis dicta
-                            distinctio dolore animi, impedit, ut nihil totam
-                            eum! Quos pariatur perspiciatis, eum molestias
-                            perferendis rem provident animi soluta expedita
-                            porro. Dicta repellat quaerat esse? Minus illo
-                            laboriosam velit accusamus iure voluptatum dicta
-                            maiores, numquam doloribus perferendis minima nobis
-                            ea quis vero consequuntur accusantium possimus optio
-                            nesciunt quasi ullam dolorem expedita.
-                        </div>
-                        <h2 class="projectDetail__title">What I used</h2>
-                        <div class="projectDetail__items">
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/react-testing-library.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <div class="projectDetail__technology">
-                                    React Testing Library
-                                </div>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/typescript.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <div class="projectDetail__technology">
-                                    Typescript
-                                </div>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/react.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <div class="projectDetail__technology">
-                                    React js
-                                </div>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/sass.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <div class="projectDetail__technology">
-                                    Sass
-                                </div>
-                            </div>
-                        </div>
-                        <h2>Know More</h2>
                         <div class="projectDetail__links">
-                            <a class="projectDetail__link">
-                                <img
-                                    src="./assets/dashboard/arrow-right.png"
-                                    alt=""
-                                    class="projectDetail__linkIcon"
-                                />
-                                Go to project
-                            </a>
-                            <a class="projectDetail__link">
+                            <a
+                                class="projectDetail__link"
+                                href="https://github.com/DQCoding1/DiegoQuintero"
+                                target="_blank"
+                            >
                                 <img
                                     src="./assets/dashboard/arrow-right.png"
                                     alt=""
@@ -842,6 +829,67 @@
                                 />
                                 Go to code
                             </a>
+                        </div>
+                        <h2 class="projectDetail__title">Description</h2>
+                        <p class="projectDetail__description">
+                            This project has been developed using pure
+                            JavaScript (Vanilla JavaScript). The Intersection
+                            Observer functionality has been employed to carry
+                            out some of the animations on the site.
+                            Additionally, the BEM methodology (Block Element
+                            Modifier) has been implemented in the structuring
+                            and naming of CSS classes, contributing to greater
+                            code clarity and maintainability.
+                            <br />
+                            <br />
+                            Regarding the styling aspect, Custom Properties in
+                            CSS have been leveraged, allowing flexibility in
+                            defining styles and facilitating their modification
+                            throughout the project.
+                            <br />
+                            <br />
+                            A class-based approach has been applied in CSS to
+                            manage the animation logic, resulting in an
+                            effective organization of interface styles and
+                            behaviors.
+                            <br />
+                            <br />
+                            Furthermore, a scroll control mechanism, both
+                            horizontal and vertical, has been implemented in the
+                            project, enabling smooth navigation for the user.
+                        </p>
+                        <h2 class="projectDetail__title">What I used</h2>
+                        <div class="projectDetail__items">
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/html.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">
+                                    Html 5
+                                </div>
+                            </div>
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/css.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">
+                                    Css 3
+                                </div>
+                            </div>
+                            <div class="projectDetail__item">
+                                <img
+                                    src="./assets/technologies/javascript.svg"
+                                    alt=""
+                                    class="projectDetail__icon"
+                                />
+                                <div class="projectDetail__technology">
+                                    Javascript
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -851,8 +899,9 @@
                 <div class="contact__content element--hidden">
                     <h2 class="contact__title">Get in touch</h2>
                     <p class="contact__description">
-                        If you want to contact me, you can do it throughout
-                        social media, I look forward to hearing from you
+                        If you'd like to get in touch with me, feel free to
+                        reach out on social media. I'm looking forward to
+                        hearing from you.
                     </p>
                     <div class="contact__items">
                         <div class="contact__item">
