@@ -14,11 +14,16 @@
     --cta-light: #ff6600;
     --cta-dark: #923100;
     --fs-title: 1.3rem;
-    --fs-subTitle: 1.08rem;
+    --fs-title-s: 1.1rem;
+    --fs-subTitle: 1.1rem;
+    --fs-subTitle-s: .9rem;
     --fs-paragraph: 1rem;
+    --fs-paragraph-s: 0.8rem;
     --transition-fast: 300ms;
     --transition-slow: 700ms;
     --ease: ease-out;
+    --line-height: 1.5rem;
+    --line-height-s: 1.2rem;
 }
 
 .dark-mode {
@@ -63,12 +68,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: var(--fs-title);
+    font-size: var(--fs-subTitle);
 }
 
 p {
     font-size: var(--fs-paragraph);
-    line-height: 1.5rem;
+    line-height: var(--line-height);
 }
 
 li {
@@ -91,4 +96,27 @@ button {
     opacity: 0;
     visibility: hidden;
     transform: translateY(20%);
+}
+
+@media (max-width: 1350px) {
+    h1 {
+        font-size: var(--fs-title-s);
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: var(--fs-subTitle-s);
+    }
+
+    p {
+        font-size: var(--fs-paragraph-s);
+        line-height: var(--line-height-s);
+    }
+
+    a{
+        font-size: var(--fs-paragraph-s);
+    }
 }

@@ -14,11 +14,17 @@
 }
 
 .about__img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 5px;
 }
 
-.about__description{
-    font-size: var(--fs-paragraph);
+@media (max-width: 1350px) {
+    .about__content {
+        gap: 1rem;
+    }
+    .about__img {
+        width: 150px;
+        height: 150px;
+    }
 }

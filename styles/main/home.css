@@ -55,10 +55,6 @@
     transform: translateY(0);
 }
 
-.home__scrollTitle {
-    font-size: 13px;
-}
-
 .home__scrollArrow {
     width: 25px;
     height: 25px;
