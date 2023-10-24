@@ -28,3 +28,13 @@
         height: 150px;
     }
 }
+
+@media (max-width: 1100px) {
+    .about__img {
+        width: 120px;
+        height: 120px;
+    }
+    .about__content {
+        width: 50%;
+    }
+}

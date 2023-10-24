@@ -10,8 +10,8 @@
 }
 
 .main__section {
-    background-color: var(--bg-section);
     min-width: 95%;
     height: 90%;
+    background-color: var(--bg-section);
     border-radius: 15px;
 }
