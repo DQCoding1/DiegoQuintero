@@ -131,3 +131,9 @@
         grid-auto-rows: 35px;
     }
 }
+
+@media (max-width: 900px) {
+    .projectDetail__title--name {
+        font-size: 1rem;
+    }
+}

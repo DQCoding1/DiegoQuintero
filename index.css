@@ -17,13 +17,16 @@
     --fs-title-s: 1.1rem;
     --fs-subTitle: 1.1rem;
     --fs-subTitle-s: 0.9rem;
+    --fs-subTitle-xs: 0.75rem;
     --fs-paragraph: 1rem;
     --fs-paragraph-s: 0.8rem;
+    --fs-paragraph-xs: 0.7rem;
+    --line-height: 1.5rem;
+    --line-height-s: 1.2rem;
+    --line-height-xs: 1rem;
     --transition-fast: 300ms;
     --transition-slow: 700ms;
     --ease: ease-out;
-    --line-height: 1.5rem;
-    --line-height-s: 1.2rem;
 }
 
 .dark-mode {
@@ -175,5 +178,29 @@ button:hover::after {
     button {
         width: 100px;
         padding: 0.3rem 1.3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    p {
+        font-size: var(--fs-paragraph-xs);
+        line-height: var(--line-height-xs);
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: var(--fs-subTitle-xs);
+    }
+
+    button {
+        /* width: 100%; */
+        padding: 0.3rem 1.3rem;
+    }
+
+    a {
+        font-size: var(--fs-paragraph-xs);
     }
 }

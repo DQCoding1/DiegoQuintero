@@ -45,3 +45,9 @@
         width: 70%;
     }
 }
+
+@media (max-width: 900px) {
+    .skills__content {
+        width: 90%;
+    }
+}

@@ -15,3 +15,15 @@
     background-color: var(--bg-section);
     border-radius: 15px;
 }
+
+@media (max-width: 900px) {
+    .main {
+        flex-direction: column;
+        overflow: visible;
+        height: max-content;
+    }
+
+    .main__section {
+        height: 500px;
+    }
+}

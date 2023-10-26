@@ -54,3 +54,19 @@
         width: 90%;
     }
 }
+
+@media (max-width: 900px) {
+    .projects__content {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .projects__texts {
+        gap: 0.2rem;
+        padding: 0.4rem;
+    }
+
+    .projects__video {
+        height: 130px;
+    }
+}
