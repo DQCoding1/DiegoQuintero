@@ -1,8 +1,8 @@
 import "./js/header/toggleAsideNav.js";
-import "./js/header/showMenuIcon.js";
+import "./js/header/toggleElementsForAside.js";
 import "./js/header/toggleMode.js";
-import "./js/main/horizontal-scroll/byWheel.js";
-import "./js/main/horizontal-scroll/byAnchors.js";
+import "./js/main/scroll/byWheel.js";
+import "./js/main/scroll/byAnchors.js";
 import "./js/main/project-detail/openProjectDetail.js";
 import "./js/main/project-detail/closeProjectDetail.js";
 import "./js/main/intersection-observer/sectionsContent.js";

@@ -14,7 +14,20 @@
     justify-content: space-between;
 }
 
-.header__brand {
+
+.header__ul {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.header__a {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.header__a--brand {
     user-select: none;
 }
 
@@ -25,16 +38,10 @@
     align-items: center;
 }
 
-.header__ul {
-    display: flex;
-    align-items: center;
-    gap: 3.2rem;
-}
-
 .header__menuIcon {
     display: none;
-    width: 25px;
-    height: 25px;
+    width: 28px;
+    height: 28px;
     filter: invert(1);
 }
 
@@ -42,12 +49,8 @@
     filter: none;
 }
 
-.header__a {
-    position: relative;
-    cursor: pointer;
-}
 
-.header__a:is(:not(.header__a--active, .header__brand))::before {
+.header__a:is(:not(.header__a--active, .header__a--brand))::before {
     position: absolute;
     content: "";
     width: 150%;
