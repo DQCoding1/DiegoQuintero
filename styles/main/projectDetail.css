@@ -18,7 +18,7 @@
     justify-content: center;
     overflow: auto;
     position: fixed;
-    z-index: 100;
+    z-index: 60;
     top: 0;
     left: 0;
     background-color: var(--bg-section);

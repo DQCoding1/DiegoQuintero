@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 @import "./styles/header/header.css";
+@import "./styles/header/switch.css";
+@import "./styles/header/aside.css";
 @import "./styles/main/main.css";
 @import "./styles/main/home.css";
 @import "./styles/main/about.css";
@@ -99,7 +101,7 @@ button {
     font-weight: 700;
     background-color: transparent;
     border-radius: 5px;
-    z-index: 100;
+    z-index: 20;
     position: relative;
 }
 

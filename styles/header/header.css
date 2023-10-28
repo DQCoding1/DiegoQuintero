@@ -3,23 +3,43 @@
     height: 10vh;
     padding: 2rem;
     background-color: var(--bg-header);
-}
-
-.header__nav {
-    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header__nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__brand {
     user-select: none;
 }
 
+.header__preferences {
+    margin-left: 3.2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
 .header__ul {
     display: flex;
     align-items: center;
     gap: 3.2rem;
+}
+
+.header__menuIcon {
+    display: none;
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+}
+
+.header__menuIcon--lightmode {
+    filter: none;
 }
 
 .header__a {
@@ -64,69 +84,21 @@
     transition: var(--transition-fast) var(--ease);
 }
 
-.switch {
-    width: 50px;
-    height: 20px;
-    border-radius: 15px;
-    background: var(--switch-bg);
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 0.2rem;
-    cursor: pointer;
-}
-
-.switch__btn {
-    width: 18px;
-    height: 18px;
-    background-color: var(--switch-btn-bg);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: var(--transition-fast) var(--ease);
-}
-
-.switch__btn--light {
-    transform: translateX(150%);
-}
-
-.switch__icon {
-    display: none;
-    transition: var(--transition-fast) var(--ease);
-}
-
-.switch__icon--visible {
-    display: block;
-    filter: invert(99%) sepia(4%) saturate(18%) hue-rotate(155deg)
-        brightness(106%) contrast(100%);
-    width: 70%;
-    height: 70%;
-}
-
 @media (max-width: 1100px) {
-    .switch {
-        width: 35px;
-        height: 15px;
-    }
-    .switch__btn {
-        width: 12px;
-        height: 12px;
-    }
     .header__ul {
         gap: 2.5rem;
     }
 }
 
 @media (max-width: 900px) {
-    .header{
+    .header {
         position: sticky;
         top: 0;
         left: 0;
-        z-index: 100;
+        z-index: 40;
     }
 
-    .header__ul{
+    .header__ul {
         gap: 2.5rem;
     }
 }

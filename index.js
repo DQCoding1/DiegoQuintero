@@ -1,4 +1,6 @@
-import "./js/header/switchMode.js";
+import "./js/header/toggleAsideNav.js";
+import "./js/header/showMenuIcon.js";
+import "./js/header/toggleMode.js";
 import "./js/main/horizontal-scroll/byWheel.js";
 import "./js/main/horizontal-scroll/byAnchors.js";
 import "./js/main/project-detail/openProjectDetail.js";

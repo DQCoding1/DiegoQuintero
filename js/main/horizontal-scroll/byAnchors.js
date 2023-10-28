@@ -5,49 +5,55 @@ const projectsSection = document.querySelector("[data-section='projects']");
 const contactSection = document.querySelector("[data-section='contact']");
 const skillsSection = document.querySelector("[data-section='skills']");
 const homeScroll = document.querySelector(".home__scroll");
+const aside = document.querySelector(".aside");
 
 const goToSection = (e) => {
+    aside.classList.toggle("aside--visible");
+
+    
+    if (e.target.dataset.go_to !== "home") {
+        homeScroll.classList.add("element--hidden");
+    }
+    
     switch (e.target.dataset.go_to) {
         case homeSection.dataset.section: {
             homeSection.scrollIntoView({
                 behavior: "smooth",
-                inline: "center",
+                // inline: "center",
             });
             break;
         }
         case aboutSection.dataset.section: {
             aboutSection.scrollIntoView({
                 behavior: "smooth",
-                inline: "center",
+                // inline: "center",
             });
             break;
         }
         case skillsSection.dataset.section: {
             skillsSection.scrollIntoView({
                 behavior: "smooth",
-                inline: "center",
+                // inline: "center",
             });
             break;
         }
         case projectsSection.dataset.section: {
             projectsSection.scrollIntoView({
                 behavior: "smooth",
-                inline: "center",
+                // inline: "center",
             });
             break;
         }
         case contactSection.dataset.section: {
             contactSection.scrollIntoView({
                 behavior: "smooth",
-                inline: "center",
+                // inline: "center",
             });
             break;
         }
     }
 
-    if (e.target.dataset.go_to !== "home") {
-        homeScroll.classList.add("element--hidden");
-    }
+
 };
 
 anchors.forEach((anchor) => {

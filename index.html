@@ -43,40 +43,67 @@
                     <li class="header__li">
                         <a class="header__a" data-go_to="contact">Contact</a>
                     </li>
-                    <li class="header__li--switch">
-                        <div class="header__switch switch">
-                            <div class="switch__btn">
-                                <img
-                                    src="./assets/dashboard/moon.png"
-                                    alt="dark mode"
-                                    class="switch__icon switch__icon--visible"
-                                />
-                                <img
-                                    src="./assets/dashboard/sun.png"
-                                    alt="light mode"
-                                    class="switch__icon"
-                                />
-                            </div>
-                        </div>
-                    </li>
                 </ul>
+            </nav>
+            <div class="header__preferences">
+                <div class="header__switch switch">
+                    <div class="switch__btn">
+                        <img
+                        src="./assets/dashboard/moon.png"
+                        alt="dark mode"
+                        class="switch__icon switch__icon--visible"
+                        />
+                        <img
+                        src="./assets/dashboard/sun.png"
+                        alt="light mode"
+                        class="switch__icon"
+                        />
+                    </div>
+                </div>
+                <img 
+                    src="./assets/dashboard/menu.png"
+                    alt="menu" 
+                    class="header__menuIcon"
+                ></img>
+            </div>
+
+                
+            <nav class="header__nav--aside aside">
+                <div class="aside__closeContainer">
+                    <img src="./assets/dashboard/close.png" alt="close" class="aside__close">
+                </div>
+                
+                <div class="aside__content">
+                    <ul class="aside__ul">
+                        <li class="aside__li">
+                            <a class="aside__a" data-go_to="home" id="anchorHome">
+                                Home
+                            </a>
+                        </li>
+                        <li class="aside__li">
+                            <a class="aside__a" data-go_to="about">About</a>
+                        </li>
+                        <li class="aside__li">
+                            <a class="aside__a" data-go_to="skills">Skills</a>
+                        </li>
+                        <li class="aside__li">
+                            <a class="aside__a" data-go_to="projects">Projects</a>
+                        </li>
+                        <li class="aside__li">
+                            <a class="aside__a" data-go_to="contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
         <main class="main">
             <section class="main__section home" data-section="home">
-                <div class="home__brand element--hidden">
+                <div class="home__brandContainer element--hidden">
                     <img
-                        src="./assets/dashboard/brand-desktop.svg"
-                        alt="diego quintero's brand"
-                        class="home__brandImg home__brandImg--active"
-                        id="brand-darkmode-desktop"
-                    />
-                    <img
-                        src="./assets/dashboard/brand-light-desktop.svg"
+                        src="./assets/dashboard/brand.svg"
                         alt="diego quintero's brand"
                         class="home__brandImg"
-                        id="brand-lightmode-desktop"
                     />
                 </div>
                 <img

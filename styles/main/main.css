@@ -10,7 +10,7 @@
 }
 
 .main__section {
-    min-width: 95%;
+    min-width: 90%;
     height: 90%;
     background-color: var(--bg-section);
     border-radius: 15px;
@@ -24,6 +24,7 @@
     }
 
     .main__section {
-        height: 500px;
+        width: 95%;
+        height: 570px;
     }
 }

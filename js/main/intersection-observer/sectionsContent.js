@@ -1,6 +1,6 @@
 import { sections } from "../../consts/sections.js";
 const allSections = document.querySelectorAll(".main__section");
-const homeBrand = document.querySelector(".home__brand");
+const homeBrand = document.querySelector(".home__brandContainer");
 const homeScroll = document.querySelector(".home__scroll");
 const aboutContent = document.querySelector(".about__content");
 const skillsContent = document.querySelector(".skills__content");

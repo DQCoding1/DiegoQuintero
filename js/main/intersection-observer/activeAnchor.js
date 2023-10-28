@@ -20,6 +20,7 @@ const cb = (entries) => {
                     homeAnchor.classList.add("header__a--active");
                     break;
                 case aboutAnchor.dataset.go_to:
+                    console.log(aboutAnchor);
                     aboutAnchor.classList.add("header__a--active");
                     break;
                 case skillsAnchor.dataset.go_to:
