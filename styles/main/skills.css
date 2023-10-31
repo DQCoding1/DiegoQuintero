@@ -74,20 +74,32 @@
         gap: 1.5rem;
     }
     .skills__categories {
-        gap: 3.5rem;
+        gap: 3rem;
     }
     .skills__category {
         width: 100%;
         text-align: center;
+        gap: 0.3rem;
     }
     .skills__items {
         flex-direction: row;
         gap: 0rem;
     }
     .skills__item {
+        justify-content: center;
         width: calc(100% / 3);
         padding: 0.8rem;
         flex-direction: column;
         gap: 0.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .skills__content {
+        width: 100%;
+    }
+    .skills__item {
+        width: calc(100% / 2);
+        padding: 0.5rem;
     }
 }

@@ -146,4 +146,8 @@
     .projectDetail__content {
         max-width: 100%;
     }
+    .projectDetail__back{
+        top: 15px;
+        right: 21px;
+    }
 }
