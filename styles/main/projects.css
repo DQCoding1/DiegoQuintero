@@ -70,3 +70,14 @@
         height: 130px;
     }
 }
+
+@media (max-width: 570px) {
+    .projects__content {
+        gap: 1.7rem;
+    }
+
+    .projects__texts {
+        gap: 1rem;
+        padding: 0.8rem;
+    }
+}

@@ -78,3 +78,13 @@
         width: 30%;
     }
 }
+@media (max-width: 570px) {
+    .contact__content {
+        width: 52%;
+    }
+
+    .contact__icon {
+        width: 16px;
+        height: 16px;
+    }
+}

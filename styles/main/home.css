@@ -79,3 +79,15 @@
         margin-top: 1.5rem;
     }
 }
+
+@media (max-width: 650px) {
+    .home__brandContainer {
+        width: 50%;
+    }
+}
+
+@media (max-width: 570px) {
+    .home__brandContainer {
+        width: 80%;
+    }
+}

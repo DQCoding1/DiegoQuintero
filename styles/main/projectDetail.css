@@ -137,3 +137,13 @@
         font-size: 1rem;
     }
 }
+@media (max-width: 680px) {
+    .projectDetail__content {
+        gap: 1.2rem;
+    }
+}
+@media (max-width: 570px) {
+    .projectDetail__content {
+        max-width: 100%;
+    }
+}

@@ -38,3 +38,8 @@
         width: 50%;
     }
 }
+@media (max-width: 570px) {
+    .about__content {
+        width: 70%;
+    }
+}

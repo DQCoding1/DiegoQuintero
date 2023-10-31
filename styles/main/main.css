@@ -25,6 +25,12 @@
 
     .main__section {
         width: 95%;
-        height: 570px;
+        min-height: 570px;
+    }
+}
+
+@media (max-width: 570px) {
+    .main__section {
+        padding: 1.7rem 1rem;
     }
 }
