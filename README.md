@@ -4,5 +4,5 @@ here you can find my personal portfolio, you can find a little bit of informatio
 
 [see portfolio here](https://dqcoding1.github.io/DiegoQuintero/)
 
-![personal portfolio](https://i.postimg.cc/6pXkhYrY/this-Portfolio.jpg)
+[![Captura-de-pantalla-2023-11-20-131331.png](https://i.postimg.cc/GtqqKzrK/Captura-de-pantalla-2023-11-20-131331.png)](https://postimg.cc/n994c4X9)
 
