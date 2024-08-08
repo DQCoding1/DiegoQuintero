@@ -5,17 +5,17 @@
 }
 
 .about__content {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     transition: var(--transition-slow) var(--ease);
 }
 
 .about__img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 5px;
 }
 
