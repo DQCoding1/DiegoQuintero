@@ -1,995 +1,904 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content="diego quintero" />
-        <meta
-            name="keywords"
-            content="diego quintero, diego quintero portfolio, diego quintero frontend"
-        />
-        <meta
-            name="description"
-            content="diego quintero portfolio, you can see the projects i've done,
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <meta name="googlebot" content="notranslate" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="diego quintero" />
+    <meta
+      name="keywords"
+      content="diego quintero, diego quintero portfolio, diego quintero frontend"
+    />
+    <meta
+      name="description"
+      content="diego quintero portfolio, you can see the projects i've done,
                     you can know about me a little bit and contact me throughout my social media"
+    />
+    <title>Diego Quintero</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="dark-mode">
+    <header class="header">
+      <nav class="header__nav">
+        <h1 class="header__title">
+          <a class="header__a header__a--brand" data-go_to="home">
+            Diego Quintero
+          </a>
+        </h1>
+        <ul class="header__ul">
+          <li class="header__li">
+            <a class="header__a header__a--home" data-go_to="home"> Home </a>
+          </li>
+          <li class="header__li">
+            <a class="header__a header__a--about" data-go_to="about"> About </a>
+          </li>
+          <li class="header__li">
+            <a class="header__a header__a--skills" data-go_to="skills">
+              Skills
+            </a>
+          </li>
+          <li class="header__li">
+            <a class="header__a header__a--projects" data-go_to="projects">
+              Projects
+            </a>
+          </li>
+          <li class="header__li">
+            <a class="header__a header__a--contact" data-go_to="contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__preferences">
+        <div class="header__switch switch">
+          <div class="switch__btn">
+            <img
+              src="./assets/dashboard/moon.png"
+              alt="dark mode"
+              class="switch__icon switch__icon--visible"
+            />
+            <img
+              src="./assets/dashboard/sun.png"
+              alt="light mode"
+              class="switch__icon"
+            />
+          </div>
+        </div>
+        <img
+          src="./assets/dashboard/menu.png"
+          alt="menu"
+          class="header__menuIcon"
         />
-        <title>Diego Quintero</title>
-        <link rel="stylesheet" href="./index.css" />
-    </head>
-    <body class="dark-mode">
-        <header class="header">
-            <nav class="header__nav">
-                <h1 class="header__title">
-                    <a class="header__a header__a--brand" data-go_to="home">
-                        Diego Quintero
-                    </a>
-                </h1>
-                <ul class="header__ul">
-                    <li class="header__li">
-                        <a class="header__a header__a--home" data-go_to="home">
-                            Home
-                        </a>
-                    </li>
-                    <li class="header__li">
-                        <a
-                            class="header__a header__a--about"
-                            data-go_to="about"
-                        >
-                            About
-                        </a>
-                    </li>
-                    <li class="header__li">
-                        <a
-                            class="header__a header__a--skills"
-                            data-go_to="skills"
-                        >
-                            Skills
-                        </a>
-                    </li>
-                    <li class="header__li">
-                        <a
-                            class="header__a header__a--projects"
-                            data-go_to="projects"
-                        >
-                            Projects
-                        </a>
-                    </li>
-                    <li class="header__li">
-                        <a
-                            class="header__a header__a--contact"
-                            data-go_to="contact"
-                        >
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header__preferences">
-                <div class="header__switch switch">
-                    <div class="switch__btn">
-                        <img
-                            src="./assets/dashboard/moon.png"
-                            alt="dark mode"
-                            class="switch__icon switch__icon--visible"
-                        />
-                        <img
-                            src="./assets/dashboard/sun.png"
-                            alt="light mode"
-                            class="switch__icon"
-                        />
-                    </div>
+      </div>
+
+      <nav class="header__nav--aside aside">
+        <div class="aside__closeContainer">
+          <img
+            src="./assets/dashboard/close.png"
+            alt="close"
+            class="aside__close"
+          />
+        </div>
+
+        <div class="aside__content">
+          <ul class="aside__ul">
+            <li class="aside__li">
+              <a
+                class="aside__a aside__a--home"
+                data-go_to="home"
+                id="anchorHome"
+              >
+                Home
+              </a>
+            </li>
+            <li class="aside__li">
+              <a class="aside__a aside__a--about" data-go_to="about"> About </a>
+            </li>
+            <li class="aside__li">
+              <a class="aside__a aside__a--skills" data-go_to="skills">
+                Skills
+              </a>
+            </li>
+            <li class="aside__li">
+              <a class="aside__a aside__a--projects" data-go_to="projects">
+                Projects
+              </a>
+            </li>
+            <li class="aside__li">
+              <a class="aside__a aside__a--contact" data-go_to="contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="main__section home" data-section="home">
+        <div class="home__brandContainer element--hidden">
+          <img
+            src="./assets/dashboard/brand.svg"
+            alt="diego quintero's brand"
+            class="home__brandImg"
+          />
+        </div>
+        <img
+          src="./assets/dashboard/binary-code.svg"
+          alt="binary code"
+          class="home__binaryCode"
+        />
+        <div class="home__scroll">
+          <p class="home__scrollText">Scroll down</p>
+          <div>
+            <img
+              src="./assets/dashboard/arrow-down.svg"
+              alt="arrow down"
+              class="home__scrollArrow"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section about" data-section="about">
+        <div class="about__content element--hidden">
+          <img
+            src="./assets/dashboard/photo.jpg"
+            alt="diego photo"
+            class="about__img"
+          />
+          <h2 class="about__title">WELCOME</h2>
+          <p class="about__description">
+            My focus is on designing visually appealing and functional web
+            interfaces, with a keen emphasis on optimizing performance and
+            enhancing the user experience. I have gained four months of valuable
+            freelance experience while working on the Ariel project, during
+            which I honed my technical and collaboration skills. Additionally, I
+            successfully completed a program offered by the National University
+            of Colombia and the Colombian government called 'Mision Tic 2022,'
+            which awarded me various diplomas related to web development.
+          </p>
+        </div>
+      </section>
+
+      <section class="main__section skills" data-section="skills">
+        <div class="skills__content element--hidden">
+          <h2 class="skills__title">SKILLS</h2>
+          <div class="skills__categories">
+            <div class="skills__category">
+              <h3 class="skills__categoryTitle">Tools commonly used</h3>
+              <div class="skills__items">
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/react.svg"
+                    alt="react"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">React js</p>
                 </div>
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/typescript.svg"
+                    alt="typescript"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Typescript</p>
+                </div>
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/javascript.svg"
+                    alt="javascript"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Javascript</p>
+                </div>
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/redux.svg"
+                    alt="redux"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Redux</p>
+                </div>
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/sass.svg"
+                    alt="sass"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Sass</p>
+                </div>
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/css.svg"
+                    alt="css 3"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Css 3</p>
+                </div>
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/html.svg"
+                    alt="html 5"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Html 5</p>
+                </div>
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/github.png"
+                    alt="github"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Github</p>
+                </div>
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/primereact.svg"
+                    alt="primereact"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Primereact</p>
+                </div>
+              </div>
+            </div>
+            <div class="skills__category">
+              <h3 class="skills__categoryTitle">Tools at some point used</h3>
+              <div class="skills__items">
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/rxjs.svg"
+                    alt="rxjs"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Rxjs</p>
+                </div>
+
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/nextjs.svg"
+                    alt="next js"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Next js</p>
+                </div>
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/framer-motion.svg"
+                    alt="framer motion"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Framer Motion</p>
+                </div>
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/jest.svg"
+                    alt="jest"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Jest</p>
+                </div>
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/react-testing-library.svg"
+                    alt="react testing library"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">React Testing Library</p>
+                </div>
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/bootstrap.svg"
+                    alt="bootstrap"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Bootstrap</p>
+                </div>
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/php.svg"
+                    alt="php"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Php</p>
+                </div>
+                <div class="skills__item">
+                  <img
+                    src="./assets/technologies/mysql.svg"
+                    alt="mysql"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Mysql</p>
+                </div>
+              </div>
+            </div>
+            <div class="skills__category">
+              <h3 class="skills__categoryTitle">Languages</h3>
+              <div class="skills__items">
+                <div class="skills__item">
+                  <img
+                    src="./assets/languages/english.svg"
+                    alt="usa"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">English</p>
+                </div>
+                <div class="skills__item">
+                  <img
+                    src="./assets/languages/portuguese.svg"
+                    alt="portuguese"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Portuguese</p>
+                </div>
+                <div class="skills__item">
+                  <img
+                    src="./assets/languages/spanish.svg"
+                    alt="Spanish"
+                    class="skills__itemIcon"
+                  />
+                  <p class="skills__itemName">Spanish</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section projects" data-section="projects">
+        <div class="projects__content element--hidden">
+          <div class="projects__item">
+            <video
+              src="./assets/projects/ariel.mp4"
+              alt="ariel"
+              controls
+              loop
+              muted
+              autoplay
+              class="projects__video"
+            ></video>
+            <div class="projects__texts">
+              <h2 class="projects__title">Ariel</h2>
+              <button class="projects__button" data-go_to="ariel">
+                More ...
+              </button>
+            </div>
+          </div>
+          <div class="projects__item">
+            <video
+              src="./assets/projects/video-games.mp4"
+              alt="video game"
+              controls
+              loop
+              muted
+              autoplay
+              class="projects__video"
+            ></video>
+            <div class="projects__texts">
+              <h2 class="projects__title">Video game exchange</h2>
+              <button class="projects__button" data-go_to="video-game">
+                More ...
+              </button>
+            </div>
+          </div>
+          <div class="projects__item">
+            <video
+              src="./assets/projects/guitar-chords.mp4"
+              alt="guitar chords"
+              controls
+              loop
+              muted
+              autoplay
+              class="projects__video"
+            ></video>
+            <div class="projects__texts">
+              <h2 class="projects__title">Guitar Chords Test</h2>
+              <button class="projects__button" data-go_to="guitar-chords">
+                More ...
+              </button>
+            </div>
+          </div>
+          <div class="projects__item">
+            <video
+              src="./assets/projects/portfolio.mp4"
+              alt="portfolio"
+              loop
+              controls
+              muted
+              autoplay
+              class="projects__video"
+            ></video>
+            <div class="projects__texts">
+              <h2 class="projects__title">Personal Portfolio</h2>
+              <button class="projects__button" data-go_to="portfolio">
+                More ...
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectDetail" data-project="ariel">
+          <div class="projectDetail__content">
+            <button class="projectDetail__back">Back</button>
+            <h2 class="projectDetail__title projectDetail__title--name">
+              Ariel
+            </h2>
+            <p>
+              Due to confidentiality and security reasons, I cannot provide
+              access to the project's code or disclose details. If you want to
+              know more please contact me.
+            </p>
+            <h2 class="projectDetail__title">Description</h2>
+            <p class="projectDetail__description">
+              Legal professionals often face lengthy hearings that can extend
+              for hours or even days. In addition, they must tackle the reading
+              and analysis of legal documents of considerable length and
+              complexity. In this context, this application presents itself as a
+              highly capable tool to assist in various legal tasks. Among its
+              notable features are the ability to research laws and regulations,
+              prepare and review legal documents, as well as efficiently
+              organize and maintain legal files.
+              <br />
+              <br />
+              The platform offers users the opportunity to upload both audio
+              files and text documents. Through a built-in chat within the
+              ChatGPT API, interaction is enabled, allowing users to pose
+              general questions related to laws and regulations. Furthermore,
+              the option to make specific inquiries about documents previously
+              uploaded to the platform is provided.
+              <br />
+              <br />
+              The system is divided into two key roles: that of the user and the
+              administrator. Users have access to the functionality of engaging
+              with the chat to ask general questions about legal matters and to
+              make specific inquiries regarding audio files uploaded beforehand.
+              On the other hand, administrators have the capability to manage
+              user creation and deletion, as well as interact with the chat to
+              pose detailed questions about text files previously uploaded to
+              the platform.
+              <br />
+              <br />
+              In summary, this application provides a comprehensive solution for
+              legal needs, enabling legal professionals and users, in general,
+              to effectively and efficiently address a wide range of legal
+              issues, from law research to interaction with specific documents,
+              all backed by the power of artificial intelligence and ChatGPT's
+              natural language processing capabilities.
+            </p>
+            <h2 class="projectDetail__title">What I used</h2>
+            <div class="projectDetail__items">
+              <div class="projectDetail__item">
                 <img
-                    src="./assets/dashboard/menu.png"
-                    alt="menu"
-                    class="header__menuIcon"
+                  src="./assets/technologies/react.svg"
+                  alt=""
+                  class="projectDetail__icon"
                 />
+                <p class="projectDetail__technology">React</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/typescript.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Typescript</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/redux.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Redux</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/sass.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Sass</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/primereact.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Primereact</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/framer-motion.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Framer Motion</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/rxjs.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Rxjs</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/react-testing-library.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">React Testing Library</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/jest.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Jest</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/html.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Html 5</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/css.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Css 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectDetail" data-project="video-game">
+          <div class="projectDetail__content">
+            <button class="projectDetail__back">Back</button>
+            <h2 class="projectDetail__title projectDetail__title--name">
+              Video Game Exchange
+            </h2>
+            <div class="projectDetail__links">
+              <a
+                class="projectDetail__link"
+                href="https://dqcoding1.github.io/video-game-exchange/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/dashboard/arrow-right.png"
+                  alt=""
+                  class="projectDetail__linkIcon"
+                />
+                Go to project
+              </a>
+              <a
+                class="projectDetail__link"
+                href="https://github.com/DQCoding1/video-game-exchange"
+                target="_blank"
+              >
+                <img
+                  src="./assets/dashboard/arrow-right.png"
+                  alt=""
+                  class="projectDetail__linkIcon"
+                />
+                Go to code
+              </a>
+            </div>
+            <h2 class="projectDetail__title">Description</h2>
+            <p class="projectDetail__description">
+              This platform has been developed to function as a video game
+              exchange marketplace. Within this platform, different users have
+              the opportunity to trade video games with one another. In the
+              application, users can filter their search based on various
+              criteria, such as their console preferences (be it Xbox,
+              PlayStation, or both), as well as the game's condition, i.e.,
+              whether they wish to acquire new or used games. Furthermore, there
+              is an option to specify the generation of the console to which the
+              game belongs, allowing users to search for titles from either
+              older or modern consoles.
+              <br />
+              <br />
+              Among the key functionalities of the application are the ability
+              to register for those who do not have a user account and to log in
+              if an account has already been created. Users can upload their
+              video games onto the platform, along with relevant information
+              about them. Additionally, a messaging feature is available,
+              enabling users to communicate with others interested in exchanging
+              video games.
+            </p>
+            <h2 class="projectDetail__title">What I used</h2>
+            <div class="projectDetail__items">
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/html.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Html 5</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/css.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Css 3</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/sass.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Sass</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/javascript.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Javascript</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/react.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">React</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/php.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Php</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/mysql.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Mysql</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectDetail" data-project="guitar-chords">
+          <div class="projectDetail__content">
+            <button class="projectDetail__back">Back</button>
+            <h2 class="projectDetail__title projectDetail__title--name">
+              Guitar Chords Test
+            </h2>
+            <div class="projectDetail__links">
+              <a
+                class="projectDetail__link"
+                href="https://dqcoding1.github.io/guitar-chords-test/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/dashboard/arrow-right.png"
+                  alt=""
+                  class="projectDetail__linkIcon"
+                />
+                Go to project
+              </a>
+              <a
+                class="projectDetail__link"
+                href="https://github.com/DQCoding1/guitar-chords-test"
+                target="_blank"
+              >
+                <img
+                  src="./assets/dashboard/arrow-right.png"
+                  alt=""
+                  class="projectDetail__linkIcon"
+                />
+                Go to code
+              </a>
             </div>
 
-            <nav class="header__nav--aside aside">
-                <div class="aside__closeContainer">
-                    <img
-                        src="./assets/dashboard/close.png"
-                        alt="close"
-                        class="aside__close"
-                    />
-                </div>
-
-                <div class="aside__content">
-                    <ul class="aside__ul">
-                        <li class="aside__li">
-                            <a
-                                class="aside__a aside__a--home"
-                                data-go_to="home"
-                                id="anchorHome"
-                            >
-                                Home
-                            </a>
-                        </li>
-                        <li class="aside__li">
-                            <a
-                                class="aside__a aside__a--about"
-                                data-go_to="about"
-                            >
-                                About
-                            </a>
-                        </li>
-                        <li class="aside__li">
-                            <a
-                                class="aside__a aside__a--skills"
-                                data-go_to="skills"
-                            >
-                                Skills
-                            </a>
-                        </li>
-                        <li class="aside__li">
-                            <a
-                                class="aside__a aside__a--projects"
-                                data-go_to="projects"
-                            >
-                                Projects
-                            </a>
-                        </li>
-                        <li class="aside__li">
-                            <a
-                                class="aside__a aside__a--contact"
-                                data-go_to="contact"
-                            >
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-        <main class="main">
-            <section class="main__section home" data-section="home">
-                <div class="home__brandContainer element--hidden">
-                    <img
-                        src="./assets/dashboard/brand.svg"
-                        alt="diego quintero's brand"
-                        class="home__brandImg"
-                    />
-                </div>
+            <h2 class="projectDetail__title">Description</h2>
+            <p class="projectDetail__description">
+              The purpose of this application is to assist guitarists in
+              enhancing their musical ear through an evaluation of guitar chord
+              identification. Within the platform, users can engage in training
+              sessions designed to strengthen their ability to recognize guitar
+              chords. Furthermore, they have the option to take a test in which
+              they can customize the number of desired questions, as well as the
+              variety and quantity of chord types they wish to identify.
+              <br />
+              <br />
+              During the test, a guitar chord will be randomly generated, and
+              the goal is for the user to select the correct option
+              corresponding to that chord. If the response is accurate, an
+              animation will be displayed to confirm that the user chose the
+              correct answer. In the event that the user chooses an incorrect
+              answer, an animation will be provided to indicate the correct
+              chord. Upon completion of the test, the user will be awarded a
+              final score, assessing their performance in chord identification.
+            </p>
+            <h2 class="projectDetail__title">What I used</h2>
+            <div class="projectDetail__items">
+              <div class="projectDetail__item">
                 <img
-                    src="./assets/dashboard/binary-code.svg"
-                    alt="binary code"
-                    class="home__binaryCode"
+                  src="./assets/technologies/react.svg"
+                  alt=""
+                  class="projectDetail__icon"
                 />
-                <div class="home__scroll">
-                    <p class="home__scrollText">Scroll down</p>
-                    <div>
-                        <img
-                            src="./assets/dashboard/arrow-down.svg"
-                            alt="arrow down"
-                            class="home__scrollArrow"
-                        />
-                    </div>
-                </div>
-            </section>
+                <p class="projectDetail__technology">React</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/typescript.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Typescript</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/bootstrap.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Bootstrap</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/css.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Css 3</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/html.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Html 5</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            <section class="main__section about" data-section="about">
-                <div class="about__content element--hidden">
-                    <img
-                        src="./assets/dashboard/photo.jpg"
-                        alt="diego photo"
-                        class="about__img"
-                    />
-                    <h2 class="about__title">WELCOME</h2>
-                    <p class="about__description">
-                        My focus is on designing visually appealing and
-                        functional web interfaces, with a keen emphasis on
-                        optimizing performance and enhancing the user
-                        experience. I have gained four months of valuable
-                        freelance experience while working on the Ariel project,
-                        during which I honed my technical and collaboration
-                        skills. Additionally, I successfully completed a program
-                        offered by the National University of Colombia and the
-                        Colombian government called 'Mision Tic 2022,' which
-                        awarded me various diplomas related to web development.
-                    </p>
-                </div>
-            </section>
+        <div class="projectDetail" data-project="portfolio">
+          <div class="projectDetail__content">
+            <button class="projectDetail__back">Back</button>
+            <h2 class="projectDetail__title projectDetail__title--name">
+              Personal Portfolio
+            </h2>
+            <div class="projectDetail__links">
+              <a
+                class="projectDetail__link"
+                href="https://github.com/DQCoding1/DiegoQuintero"
+                target="_blank"
+              >
+                <img
+                  src="./assets/dashboard/arrow-right.png"
+                  alt=""
+                  class="projectDetail__linkIcon"
+                />
+                Go to code
+              </a>
+            </div>
+            <h2 class="projectDetail__title">Description</h2>
+            <p class="projectDetail__description">
+              This project has been developed using pure JavaScript (Vanilla
+              JavaScript). The Intersection Observer functionality has been
+              employed to carry out some of the animations on the site.
+              Additionally, the BEM methodology (Block Element Modifier) has
+              been implemented in the structuring and naming of CSS classes,
+              contributing to greater code clarity and maintainability.
+              <br />
+              <br />
+              Regarding the styling aspect, Custom Properties in CSS have been
+              leveraged, allowing flexibility in defining styles and
+              facilitating their modification throughout the project.
+              <br />
+              <br />
+              A class-based approach has been applied in CSS to manage the
+              animation logic, resulting in an effective organization of
+              interface styles and behaviors.
+              <br />
+              <br />
+              Furthermore, a scroll control mechanism, both horizontal and
+              vertical, has been implemented in the project, enabling smooth
+              navigation for the user.
+            </p>
+            <h2 class="projectDetail__title">What I used</h2>
+            <div class="projectDetail__items">
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/html.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Html 5</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/css.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Css 3</p>
+              </div>
+              <div class="projectDetail__item">
+                <img
+                  src="./assets/technologies/javascript.svg"
+                  alt=""
+                  class="projectDetail__icon"
+                />
+                <p class="projectDetail__technology">Javascript</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <section class="main__section skills" data-section="skills">
-                <div class="skills__content element--hidden">
-                    <h2 class="skills__title">SKILLS</h2>
-                    <div class="skills__categories">
-                        <div class="skills__category">
-                            <h3 class="skills__categoryTitle">
-                                Tools commonly used
-                            </h3>
-                            <div class="skills__items">
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/react.svg"
-                                        alt="react"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">React js</p>
-                                </div>
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/typescript.svg"
-                                        alt="typescript"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">Typescript</p>
-                                </div>
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/javascript.svg"
-                                        alt="javascript"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">Javascript</p>
-                                </div>
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/redux.svg"
-                                        alt="redux"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">Redux</p>
-                                </div>
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/sass.svg"
-                                        alt="sass"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">Sass</p>
-                                </div>
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/css.svg"
-                                        alt="css 3"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">Css 3</p>
-                                </div>
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/html.svg"
-                                        alt="html 5"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">Html 5</p>
-                                </div>
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/github.png"
-                                        alt="github"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">Github</p>
-                                </div>
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/primereact.svg"
-                                        alt="primereact"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">Primereact</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills__category">
-                            <h3 class="skills__categoryTitle">
-                                Tools at some point used
-                            </h3>
-                            <div class="skills__items">
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/rxjs.svg"
-                                        alt="rxjs"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">Rxjs</p>
-                                </div>
-
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/nextjs.svg"
-                                        alt="next js"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">Next js</p>
-                                </div>
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/framer-motion.svg"
-                                        alt="framer motion"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">
-                                        Framer Motion
-                                    </p>
-                                </div>
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/jest.svg"
-                                        alt="jest"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">Jest</p>
-                                </div>
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/react-testing-library.svg"
-                                        alt="react testing library"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">
-                                        React Testing Library
-                                    </p>
-                                </div>
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/bootstrap.svg"
-                                        alt="bootstrap"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">Bootstrap</p>
-                                </div>
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/php.svg"
-                                        alt="php"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">Php</p>
-                                </div>
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/technologies/mysql.svg"
-                                        alt="mysql"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">Mysql</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills__category">
-                            <h3 class="skills__categoryTitle">Languages</h3>
-                            <div class="skills__items">
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/languages/english.svg"
-                                        alt="usa"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">English</p>
-                                </div>
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/languages/portuguese.svg"
-                                        alt="portuguese"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">Portuguese</p>
-                                </div>
-                                <div class="skills__item">
-                                    <img
-                                        src="./assets/languages/spanish.svg"
-                                        alt="Spanish"
-                                        class="skills__itemIcon"
-                                    />
-                                    <p class="skills__itemName">Spanish</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="main__section projects" data-section="projects">
-                <div class="projects__content element--hidden">
-                    <div class="projects__item">
-                        <video
-                            src="./assets/projects/ariel.mp4"
-                            alt="ariel"
-                            controls
-                            loop
-                            muted
-                            autoplay
-                            class="projects__video"
-                        ></video>
-                        <div class="projects__texts">
-                            <h2 class="projects__title">Ariel</h2>
-                            <button class="projects__button" data-go_to="ariel">
-                                More ...
-                            </button>
-                        </div>
-                    </div>
-                    <div class="projects__item">
-                        <video
-                            src="./assets/projects/video-games.mp4"
-                            alt="video game"
-                            controls
-                            loop
-                            muted
-                            autoplay
-                            class="projects__video"
-                        ></video>
-                        <div class="projects__texts">
-                            <h2 class="projects__title">Video game exchange</h2>
-                            <button
-                                class="projects__button"
-                                data-go_to="video-game"
-                            >
-                                More ...
-                            </button>
-                        </div>
-                    </div>
-                    <div class="projects__item">
-                        <video
-                            src="./assets/projects/guitar-chords.mp4"
-                            alt="guitar chords"
-                            controls
-                            loop
-                            muted
-                            autoplay
-                            class="projects__video"
-                        ></video>
-                        <div class="projects__texts">
-                            <h2 class="projects__title">Guitar Chords Test</h2>
-                            <button
-                                class="projects__button"
-                                data-go_to="guitar-chords"
-                            >
-                                More ...
-                            </button>
-                        </div>
-                    </div>
-                    <div class="projects__item">
-                        <video
-                            src="./assets/projects/portfolio.mp4"
-                            alt="portfolio"
-                            loop
-                            controls
-                            muted
-                            autoplay
-                            class="projects__video"
-                        ></video>
-                        <div class="projects__texts">
-                            <h2 class="projects__title">Personal Portfolio</h2>
-                            <button
-                                class="projects__button"
-                                data-go_to="portfolio"
-                            >
-                                More ...
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projectDetail" data-project="ariel">
-                    <div class="projectDetail__content">
-                        <button class="projectDetail__back">Back</button>
-                        <h2
-                            class="projectDetail__title projectDetail__title--name"
-                        >
-                            Ariel
-                        </h2>
-                        <p>
-                            Due to confidentiality and security reasons, I
-                            cannot provide access to the project's code or
-                            disclose details. If you want to know more please
-                            contact me.
-                        </p>
-                        <h2 class="projectDetail__title">Description</h2>
-                        <p class="projectDetail__description">
-                            Legal professionals often face lengthy hearings that
-                            can extend for hours or even days. In addition, they
-                            must tackle the reading and analysis of legal
-                            documents of considerable length and complexity. In
-                            this context, this application presents itself as a
-                            highly capable tool to assist in various legal
-                            tasks. Among its notable features are the ability to
-                            research laws and regulations, prepare and review
-                            legal documents, as well as efficiently organize and
-                            maintain legal files.
-                            <br />
-                            <br />
-                            The platform offers users the opportunity to upload
-                            both audio files and text documents. Through a
-                            built-in chat within the ChatGPT API, interaction is
-                            enabled, allowing users to pose general questions
-                            related to laws and regulations. Furthermore, the
-                            option to make specific inquiries about documents
-                            previously uploaded to the platform is provided.
-                            <br />
-                            <br />
-                            The system is divided into two key roles: that of
-                            the user and the administrator. Users have access to
-                            the functionality of engaging with the chat to ask
-                            general questions about legal matters and to make
-                            specific inquiries regarding audio files uploaded
-                            beforehand. On the other hand, administrators have
-                            the capability to manage user creation and deletion,
-                            as well as interact with the chat to pose detailed
-                            questions about text files previously uploaded to
-                            the platform.
-                            <br />
-                            <br />
-                            In summary, this application provides a
-                            comprehensive solution for legal needs, enabling
-                            legal professionals and users, in general, to
-                            effectively and efficiently address a wide range of
-                            legal issues, from law research to interaction with
-                            specific documents, all backed by the power of
-                            artificial intelligence and ChatGPT's natural
-                            language processing capabilities.
-                        </p>
-                        <h2 class="projectDetail__title">What I used</h2>
-                        <div class="projectDetail__items">
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/react.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">React</p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/typescript.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">
-                                    Typescript
-                                </p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/redux.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">Redux</p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/sass.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">Sass</p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/primereact.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">
-                                    Primereact
-                                </p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/framer-motion.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">
-                                    Framer Motion
-                                </p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/rxjs.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">Rxjs</p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/react-testing-library.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">
-                                    React Testing Library
-                                </p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/jest.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">Jest</p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/html.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">Html 5</p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/css.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">Css 3</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projectDetail" data-project="video-game">
-                    <div class="projectDetail__content">
-                        <button class="projectDetail__back">Back</button>
-                        <h2
-                            class="projectDetail__title projectDetail__title--name"
-                        >
-                            Video Game Exchange
-                        </h2>
-                        <div class="projectDetail__links">
-                            <a
-                                class="projectDetail__link"
-                                href="https://dqcoding1.github.io/video-game-exchange/"
-                                target="_blank"
-                            >
-                                <img
-                                    src="./assets/dashboard/arrow-right.png"
-                                    alt=""
-                                    class="projectDetail__linkIcon"
-                                />
-                                Go to project
-                            </a>
-                            <a
-                                class="projectDetail__link"
-                                href="https://github.com/DQCoding1/video-game-exchange"
-                                target="_blank"
-                            >
-                                <img
-                                    src="./assets/dashboard/arrow-right.png"
-                                    alt=""
-                                    class="projectDetail__linkIcon"
-                                />
-                                Go to code
-                            </a>
-                        </div>
-                        <h2 class="projectDetail__title">Description</h2>
-                        <p class="projectDetail__description">
-                            This platform has been developed to function as a
-                            video game exchange marketplace. Within this
-                            platform, different users have the opportunity to
-                            trade video games with one another. In the
-                            application, users can filter their search based on
-                            various criteria, such as their console preferences
-                            (be it Xbox, PlayStation, or both), as well as the
-                            game's condition, i.e., whether they wish to acquire
-                            new or used games. Furthermore, there is an option
-                            to specify the generation of the console to which
-                            the game belongs, allowing users to search for
-                            titles from either older or modern consoles.
-                            <br />
-                            <br />
-                            Among the key functionalities of the application are
-                            the ability to register for those who do not have a
-                            user account and to log in if an account has already
-                            been created. Users can upload their video games
-                            onto the platform, along with relevant information
-                            about them. Additionally, a messaging feature is
-                            available, enabling users to communicate with others
-                            interested in exchanging video games.
-                        </p>
-                        <h2 class="projectDetail__title">What I used</h2>
-                        <div class="projectDetail__items">
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/html.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">Html 5</p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/css.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">Css 3</p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/sass.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">Sass</p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/javascript.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">
-                                    Javascript
-                                </p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/react.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">React</p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/php.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">Php</p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/mysql.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">Mysql</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projectDetail" data-project="guitar-chords">
-                    <div class="projectDetail__content">
-                        <button class="projectDetail__back">Back</button>
-                        <h2
-                            class="projectDetail__title projectDetail__title--name"
-                        >
-                            Guitar Chords Test
-                        </h2>
-                        <div class="projectDetail__links">
-                            <a
-                                class="projectDetail__link"
-                                href="https://dqcoding1.github.io/guitar-chords-test/"
-                                target="_blank"
-                            >
-                                <img
-                                    src="./assets/dashboard/arrow-right.png"
-                                    alt=""
-                                    class="projectDetail__linkIcon"
-                                />
-                                Go to project
-                            </a>
-                            <a
-                                class="projectDetail__link"
-                                href="https://github.com/DQCoding1/guitar-chords-test"
-                                target="_blank"
-                            >
-                                <img
-                                    src="./assets/dashboard/arrow-right.png"
-                                    alt=""
-                                    class="projectDetail__linkIcon"
-                                />
-                                Go to code
-                            </a>
-                        </div>
-
-                        <h2 class="projectDetail__title">Description</h2>
-                        <p class="projectDetail__description">
-                            The purpose of this application is to assist
-                            guitarists in enhancing their musical ear through an
-                            evaluation of guitar chord identification. Within
-                            the platform, users can engage in training sessions
-                            designed to strengthen their ability to recognize
-                            guitar chords. Furthermore, they have the option to
-                            take a test in which they can customize the number
-                            of desired questions, as well as the variety and
-                            quantity of chord types they wish to identify.
-                            <br />
-                            <br />
-                            During the test, a guitar chord will be randomly
-                            generated, and the goal is for the user to select
-                            the correct option corresponding to that chord. If
-                            the response is accurate, an animation will be
-                            displayed to confirm that the user chose the correct
-                            answer. In the event that the user chooses an
-                            incorrect answer, an animation will be provided to
-                            indicate the correct chord. Upon completion of the
-                            test, the user will be awarded a final score,
-                            assessing their performance in chord identification.
-                        </p>
-                        <h2 class="projectDetail__title">What I used</h2>
-                        <div class="projectDetail__items">
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/react.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">React</p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/typescript.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">
-                                    Typescript
-                                </p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/bootstrap.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">
-                                    Bootstrap
-                                </p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/css.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">Css 3</p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/html.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">Html 5</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projectDetail" data-project="portfolio">
-                    <div class="projectDetail__content">
-                        <button class="projectDetail__back">Back</button>
-                        <h2
-                            class="projectDetail__title projectDetail__title--name"
-                        >
-                            Personal Portfolio
-                        </h2>
-                        <div class="projectDetail__links">
-                            <a
-                                class="projectDetail__link"
-                                href="https://github.com/DQCoding1/DiegoQuintero"
-                                target="_blank"
-                            >
-                                <img
-                                    src="./assets/dashboard/arrow-right.png"
-                                    alt=""
-                                    class="projectDetail__linkIcon"
-                                />
-                                Go to code
-                            </a>
-                        </div>
-                        <h2 class="projectDetail__title">Description</h2>
-                        <p class="projectDetail__description">
-                            This project has been developed using pure
-                            JavaScript (Vanilla JavaScript). The Intersection
-                            Observer functionality has been employed to carry
-                            out some of the animations on the site.
-                            Additionally, the BEM methodology (Block Element
-                            Modifier) has been implemented in the structuring
-                            and naming of CSS classes, contributing to greater
-                            code clarity and maintainability.
-                            <br />
-                            <br />
-                            Regarding the styling aspect, Custom Properties in
-                            CSS have been leveraged, allowing flexibility in
-                            defining styles and facilitating their modification
-                            throughout the project.
-                            <br />
-                            <br />
-                            A class-based approach has been applied in CSS to
-                            manage the animation logic, resulting in an
-                            effective organization of interface styles and
-                            behaviors.
-                            <br />
-                            <br />
-                            Furthermore, a scroll control mechanism, both
-                            horizontal and vertical, has been implemented in the
-                            project, enabling smooth navigation for the user.
-                        </p>
-                        <h2 class="projectDetail__title">What I used</h2>
-                        <div class="projectDetail__items">
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/html.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">Html 5</p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/css.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">Css 3</p>
-                            </div>
-                            <div class="projectDetail__item">
-                                <img
-                                    src="./assets/technologies/javascript.svg"
-                                    alt=""
-                                    class="projectDetail__icon"
-                                />
-                                <p class="projectDetail__technology">
-                                    Javascript
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="main__section contact" data-section="contact">
-                <div class="contact__content element--hidden">
-                    <h2 class="contact__title">Get in touch</h2>
-                    <p class="contact__description">
-                        If you'd like to get in touch with me, feel free to
-                        reach out on social media. I'm looking forward to
-                        hearing from you.
-                    </p>
-                    <div class="contact__items">
-                        <div class="contact__item">
-                            <img
-                                src="./assets/social-media/linkedin.svg"
-                                alt="linkedin"
-                                class="contact__icon"
-                            />
-                            <p class="contact__socialMedia">Linkedin</p>
-                            <a
-                                href="https://www.linkedin.com/in/diego--quintero/"
-                                class="contact__link"
-                                target="_blank"
-                                ><img
-                                    src="./assets/dashboard/arrow-right.png"
-                                    alt="arrow right"
-                                    class="contact__arrow"
-                                />Visit</a
-                            >
-                        </div>
-                        <div class="contact__item">
-                            <img
-                                src="./assets/social-media/github.png"
-                                alt="github"
-                                class="contact__icon"
-                            />
-                            <p class="contact__socialMedia">Github</p>
-                            <a
-                                href="https://github.com/DQCoding1"
-                                class="contact__link"
-                                target="_blank"
-                                ><img
-                                    src="./assets/dashboard/arrow-right.png"
-                                    alt="arrow right"
-                                    class="contact__arrow"
-                                />Visit</a
-                            >
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <script src="./index.js" type="module"></script>
-    </body>
+      <section class="main__section contact" data-section="contact">
+        <div class="contact__content element--hidden">
+          <h2 class="contact__title">Get in touch</h2>
+          <p class="contact__description">
+            If you'd like to get in touch with me, feel free to reach out on
+            social media. I'm looking forward to hearing from you.
+          </p>
+          <div class="contact__items">
+            <div class="contact__item">
+              <img
+                src="./assets/social-media/linkedin.svg"
+                alt="linkedin"
+                class="contact__icon"
+              />
+              <p class="contact__socialMedia">Linkedin</p>
+              <a
+                href="https://www.linkedin.com/in/diego--quintero/"
+                class="contact__link"
+                target="_blank"
+                ><img
+                  src="./assets/dashboard/arrow-right.png"
+                  alt="arrow right"
+                  class="contact__arrow"
+                />Visit</a
+              >
+            </div>
+            <div class="contact__item">
+              <img
+                src="./assets/social-media/github.png"
+                alt="github"
+                class="contact__icon"
+              />
+              <p class="contact__socialMedia">Github</p>
+              <a
+                href="https://github.com/DQCoding1"
+                class="contact__link"
+                target="_blank"
+                ><img
+                  src="./assets/dashboard/arrow-right.png"
+                  alt="arrow right"
+                  class="contact__arrow"
+                />Visit</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js" type="module"></script>
+  </body>
 </html>
