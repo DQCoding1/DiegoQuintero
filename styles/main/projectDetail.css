@@ -52,26 +52,40 @@
     margin-left: auto;
 }
 
+.projectDetail__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .projectDetail__title--name {
     font-size: 1.8rem;
     text-transform: uppercase;
 }
 
-.projectDetail__items {
+.projectDetail__descriptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.projectDetail__technologies {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    grid-auto-rows: 50px;
+    grid-auto-rows: 45px;
 }
 
-.projectDetail__item {
+.projectDetail__technology {
     display: flex;
     align-items: center;
     padding: 0.5rem;
     gap: 1rem;
 }
 
-.projectDetail__icon {
+.projectDetail__technologyIcon {
     width: 14px;
     height: 14px;
     object-fit: cover;

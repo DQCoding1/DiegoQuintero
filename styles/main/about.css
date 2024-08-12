@@ -13,7 +13,7 @@
     transition: var(--transition-slow) var(--ease);
 }
 
-.about__descriptionContainer{
+.about__descriptions{
     display: flex;
     flex-direction: column;
     align-items: center;
