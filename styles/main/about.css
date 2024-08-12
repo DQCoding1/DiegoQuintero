@@ -9,8 +9,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     transition: var(--transition-slow) var(--ease);
+}
+
+.about__descriptionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .about__img {
